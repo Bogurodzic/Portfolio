@@ -1,0 +1,25 @@
+.menu {
+  min-height: 100vh;
+  background: red;
+  box-sizing: border-box;
+  padding: 30px 20px;
+}
+
+.image__item {
+  width: 100%;
+  height: 100px;
+  background: black;
+}
+
+.name {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.section-list-unordered {
+  list-style: none;
+}
+
+.section-list__item {
+  display: block;
+}
