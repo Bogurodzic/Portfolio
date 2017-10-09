@@ -2,5 +2,10 @@
 }
 
 .col-md-2 {
-  width: 12.5%;
+  width: 150px;
+}
+
+.col-md-10 {
+  width: calc(100% - 150px);
+  background: red;
 }
