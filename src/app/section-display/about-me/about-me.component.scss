@@ -39,6 +39,11 @@
 
 }
 
+.bio .container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .bio-img {
 
 }
@@ -61,7 +66,7 @@
 .bio-info__text {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
-  line-height: 20px;
+  line-height: 22px;
   font-weight: 300;
 }
 
@@ -77,9 +82,9 @@
 }
 
 .bio-details__item {
-  margin-left: 10px;
-  font-size: 12px;
-  font-family: 'Open Sans', sans-serif;
+  margin-left: 15px;
+  font-size: 16px;
+  font-family: 'Cormorant', serif;
   font-weight: 300;
 }
 
@@ -93,6 +98,10 @@
 
 .bio-details-social-link {
   color: black;
+
+  &:hover {
+    color: $mainColor;
+  }
 }
 
 .section-headline {

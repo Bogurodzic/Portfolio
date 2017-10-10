@@ -5,6 +5,8 @@
   width: 100%;
   height: 100vh;
 
+
+
   background: url("/assets/img/background.png");
   background-repeat: repeat;
 
@@ -13,8 +15,25 @@
   align-items: center;
 }
 
+.corner-border {
+  width: 100px;
+  height: 100px;
+
+  position: absolute;
+  top: 40px;
+  left: 40px;
+
+  border-left: 3px solid $mainColor;
+  border-top: 3px solid $mainColor;
+}
+
 .display {
   width: 90%;
   height: 90%;
+  position: relative;
+  background: white;
+  box-shadow: 0 1px 22px;
+
   overflow: scroll;
+
 }
