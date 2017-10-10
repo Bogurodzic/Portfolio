@@ -94,3 +94,47 @@
 .bio-details-social-link {
   color: black;
 }
+
+.section-headline {
+  border-left: 2px solid $mainColor;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 19px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.services {
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.service-item {
+
+}
+
+.service-item__img {
+  width: auto;
+  height: 120px;
+  margin: auto;
+  display: block;
+}
+
+.service-item__name {
+  width: 90%;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.service-item__description {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
