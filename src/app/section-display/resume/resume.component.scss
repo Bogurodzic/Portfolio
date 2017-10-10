@@ -11,7 +11,7 @@
 
 .headline {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
 
 .headline-intro {
@@ -57,14 +57,14 @@
 
 }
 
-.history-item-wrapper {
+.history-item-wrapper, .experience-item-wrapper {
   border-left: 1px solid rgb(245, 245, 245);
 
   box-sizing: border-box;
   padding: 15px 5px 15px 15px;
 }
 
-.history-item__year {
+.history-item__year, .experience-item__year {
   display: inline-block;
   background: $mainColor;
   padding: 2.5px 7.5px 2.5px 20px;
@@ -76,7 +76,7 @@
   margin: 0;
 }
 
-.history-item__headline {
+.history-item__headline, .experience-item__headline {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -85,7 +85,7 @@
   margin: 0;
 }
 
-.history-item__short {
+.history-item__short, .experience-item__short {
   font-family: 'Cormorant', serif;
   font-size: 14px;
   font-weight: 300;
@@ -93,7 +93,7 @@
 
 }
 
-.history-item__description {
+.history-item__description, .experience-item__description {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   line-height: 20px;
