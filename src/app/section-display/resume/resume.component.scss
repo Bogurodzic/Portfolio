@@ -1,0 +1,101 @@
+@import "../../../assets/scss/variables";
+
+
+.resume-wrapper {
+  width: 100%;
+  min-height: 100%;
+  background: white;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.headline {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.headline-intro {
+  color: rgb(238, 238, 238);
+  font-size: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.headline-skills {
+  background: $mainColor;
+  padding: 2px 5px;
+  margin-left: 100px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+}
+
+.resume {
+  box-sizing: border-box;
+  padding: 0 50px;
+}
+
+.resume-headline {
+  border-left: 2px solid $mainColor;
+  padding: 5px 0 5px 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.history {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.education-history {
+
+}
+
+.history-item {
+
+}
+
+.history-item-wrapper {
+  border-left: 1px solid rgb(245, 245, 245);
+
+  box-sizing: border-box;
+  padding: 15px 5px 15px 15px;
+}
+
+.history-item__year {
+  display: inline-block;
+  background: $mainColor;
+  padding: 2.5px 7.5px 2.5px 20px;
+
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: white;
+  margin: 0;
+}
+
+.history-item__headline {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+
+  margin: 0;
+}
+
+.history-item__short {
+  font-family: 'Cormorant', serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #A5A5A5;
+
+}
+
+.history-item__description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: #555555;
+}

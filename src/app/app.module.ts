@@ -6,6 +6,7 @@ import { MenuComponent } from './menu/menu.component';
 import { SectionDisplayComponent } from './section-display/section-display.component';
 import { HomeComponent } from './section-display/home/home.component';
 import { AboutMeComponent } from './section-display/about-me/about-me.component';
+import { ResumeComponent } from './section-display/resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { AboutMeComponent } from './section-display/about-me/about-me.component'
     MenuComponent,
     SectionDisplayComponent,
     HomeComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule
