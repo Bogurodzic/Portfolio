@@ -105,7 +105,7 @@
   font-weight: 700;
 }
 
-.services {
+.service {
   box-sizing: border-box;
   padding: 0 20px;
 }
@@ -137,4 +137,17 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-align: center;
+}
+
+.skill {
+  font-size: 65px;
+  text-align: center;
+
+  &:hover {
+    color: $mainColor;
+  }
+}
+
+.skill-angular {
+  //font-size: 65px;
 }
