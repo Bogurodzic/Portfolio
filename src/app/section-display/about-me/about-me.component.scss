@@ -15,6 +15,24 @@
 
 .headline {
   text-align: center;
+  margin-bottom: 45px;
+}
+
+.headline-intro {
+  color: rgb(238, 238, 238);
+  font-size: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.headline-skills {
+  background: $mainColor;
+  padding: 2px 5px;
+  margin-left: 100px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
 }
 
 .bio {
@@ -37,4 +55,42 @@
 .bio-info__entry {
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
+  font-size: 19px;
+}
+
+.bio-info__text {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.bio-details {
+
+}
+
+.bio-details__category {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  border-bottom: 2px solid $mainColor;
+}
+
+.bio-details__item {
+  margin-left: 10px;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.bio-details-social {
+  margin-top: 25px;
+  display: flex;
+}
+
+.bio-details-social__item {
+}
+
+.bio-details-social-link {
+  color: black;
 }
