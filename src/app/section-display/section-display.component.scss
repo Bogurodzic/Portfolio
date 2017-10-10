@@ -1,3 +1,6 @@
+@import "../../assets/scss/variables";
+@include scroll;
+
 .display-wrapper {
   width: 100%;
   height: 100vh;

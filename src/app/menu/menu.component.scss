@@ -1,15 +1,6 @@
-$mainColor: rgb(46, 202, 127);
+@import "../../assets/scss/variables";
 
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(46, 202, 127, .5);
-  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-}
+@include scroll;
 
 .menu {
   max-height: 100vh;
@@ -24,8 +15,8 @@ $mainColor: rgb(46, 202, 127);
 .image__item {
   width: 90%;
   height: 100px;
-  background: black;
   margin: 0 auto;
+  display: block;
 }
 
 .name {
