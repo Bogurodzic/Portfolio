@@ -47,6 +47,17 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
       "1994.02.05",
       "woooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow ow",
       ["xd", "p"]
+    ),
+    new Item(
+      "Project 4 Testing",
+      "Landing Page",
+      "http://via.placeholder.com/666x999",
+      "category-lp",
+      "Random Client",
+      "www.google.pl",
+      "1994.02.05",
+      "woooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow ow",
+      ["xd", "p"]
     )
   ];
 

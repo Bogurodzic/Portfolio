@@ -79,8 +79,13 @@
 .item {
   display: block;
   position: absolute;
+  box-sizing: border-box;
 
   z-index: 1;
+
+}
+.col-md-3 {
+  width: 24%;
 }
 
 .col-md-4 {
