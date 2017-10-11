@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio-details',
@@ -7,6 +7,16 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class PortfolioDetailsComponent implements OnInit {
   @Output() exit = new EventEmitter();
+  @Input() detail = {
+    projectName: String,
+    projectType: String,
+    projectImage: String,
+    projectCategory: String,
+    client: String,
+    siteUrl: String,
+    date: String,
+    projectDescription: String
+ };
 
   constructor() { }
 

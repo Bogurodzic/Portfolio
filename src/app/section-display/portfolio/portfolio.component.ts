@@ -15,16 +15,19 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
   isDetailsHidden = true;
 
   projects: Item[] = [
-    new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-lp"),
-    new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-js"),
-    new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-ang"),
-    new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-lp"),
-    new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-js"),
-    new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-ang"),
-    new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-lp"),
-    new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-js"),
-    new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-ang")
+    new Item(
+      "Project 1 Testing",
+      "Landing Page",
+      "http://via.placeholder.com/666x999",
+      "category-lp",
+      "Random Client",
+      "www.google.pl",
+      "1994.02.05",
+      "woooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow ow"
+    )
   ];
+
+  chosedPortfolio = this.projects[0];
 
   constructor() { }
 
