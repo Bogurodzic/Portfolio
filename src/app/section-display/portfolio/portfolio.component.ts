@@ -53,6 +53,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
   chosedPortfolio = this.projects[0];
   chosedPortfolioFirst = true;
   chosedPortfolioLast = false;
+  chosedPortfolioIndex = 0;
 
   constructor() { }
 
@@ -63,7 +64,6 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
       this.grid = new Muuri('.grid');
       this.addEventsForCategories();
-      console.log("xD")
   }
 
   addEventsForCategories(){
@@ -108,6 +108,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
   showProject(projectDetails, index){
     this.isDetailsHidden = false;
     this.chosedPortfolio = projectDetails;
+    this.chosedPortfolioIndex = index;
     this.checkIndexes(index);
   }
 
@@ -126,6 +127,18 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
 
   onExit(){
     this.isDetailsHidden = true;
+  }
+
+  onLeft(){
+    this.chosedPortfolioIndex--;
+    this.checkIndexes(this.chosedPortfolioIndex);
+    this.chosedPortfolio = this.projects[this.chosedPortfolioIndex];
+  }
+
+  onRight(){
+    this.chosedPortfolioIndex++;
+    this.checkIndexes(this.chosedPortfolioIndex);
+    this.chosedPortfolio = this.projects[this.chosedPortfolioIndex];
   }
 
 }

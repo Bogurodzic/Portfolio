@@ -1,8 +1,8 @@
 <div class="project-details">
   <div class="menu">
-    <i class="fa fa-chevron-left menu__item" aria-hidden="true" [ngStyle]="{'display': isFirst === true ? 'none' : 'block'}" ></i>
+    <i class="fa fa-chevron-left menu__item" aria-hidden="true" [ngStyle]="{'display': isFirst === true ? 'none' : 'block'}" (click)="changeToLeftPortfolio()"></i>
     <i class="fa fa-times menu__item" aria-hidden="true" (click)="onExit()"></i>
-    <i class="fa fa-chevron-right menu__item" aria-hidden="true" [ngStyle]="{'display': isLast === true ? 'none' : 'block'}" ></i>
+    <i class="fa fa-chevron-right menu__item" aria-hidden="true" [ngStyle]="{'display': isLast === true ? 'none' : 'block'}" (click)="changeToRightPortfolio()"></i>
   </div>
   <h3 class="project-name">{{detail.projectName}}</h3>
 
