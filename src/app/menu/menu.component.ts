@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import $ from 'jquery/dist/jquery';
 
 
@@ -12,6 +12,11 @@ export class MenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+
+  chosedSection(section){
+
   }
 
 }

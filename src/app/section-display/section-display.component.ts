@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section-display.component.scss']
 })
 export class SectionDisplayComponent implements OnInit {
+  chosedSection = "home";
+
 
   constructor() { }
 
