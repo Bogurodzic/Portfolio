@@ -9,6 +9,8 @@ import $ from 'jquery/dist/jquery';
 })
 export class MenuComponent implements OnInit {
 
+  @Output() onChosedSection = new EventEmitter<{section: string}>();
+
   constructor() { }
 
   ngOnInit() {
@@ -16,7 +18,8 @@ export class MenuComponent implements OnInit {
 
 
   chosedSection(section){
-
+    this.onChosedSection.emit({"section": section});
+    console.log(section);
   }
 
 }
