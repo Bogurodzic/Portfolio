@@ -1,0 +1,32 @@
+@import "../../../assets/scss/variables";
+
+
+.portfolio-wrapper {
+  width: 100%;
+  min-height: 100%;
+  background: white;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.headline {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.headline-intro {
+  color: rgb(238, 238, 238);
+  font-size: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.headline-skills {
+  background: $mainColor;
+  padding: 2px 5px;
+  margin-left: 100px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+}

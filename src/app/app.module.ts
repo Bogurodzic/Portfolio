@@ -7,6 +7,7 @@ import { SectionDisplayComponent } from './section-display/section-display.compo
 import { HomeComponent } from './section-display/home/home.component';
 import { AboutMeComponent } from './section-display/about-me/about-me.component';
 import { ResumeComponent } from './section-display/resume/resume.component';
+import { PortfolioComponent } from './section-display/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ResumeComponent } from './section-display/resume/resume.component';
     SectionDisplayComponent,
     HomeComponent,
     AboutMeComponent,
-    ResumeComponent
+    ResumeComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule
