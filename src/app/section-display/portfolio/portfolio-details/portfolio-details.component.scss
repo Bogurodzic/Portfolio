@@ -1,0 +1,82 @@
+@import "../../../../assets/scss/variables";
+
+.project-details {
+  box-sizing: border-box;
+  padding: 20px 60px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__item {
+  padding: 5px 15px;
+
+  &:hover {
+    cursor: pointer;
+    color: $mainColor;
+  }
+}
+
+.project-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.item-content__img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+}
+
+.description {
+
+}
+
+.description__headline {
+  border-left: 2px solid $mainColor;
+  padding: 5px 0 5px 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.description-item {
+  font-family: 'Cormorant', serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.description-item__icon{
+  padding: 0 10px;
+  color: $mainColor;
+}
+
+.description-text {
+  font-family: 'Cormorant', serif;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.technology-list {
+  padding: 0;
+  list-style: none;
+}
+
+.technology-list__item {
+  display: inline-block;
+  border: 1px solid lighten(black, 80%);
+
+  box-sizing: border-box;
+  padding: 4px 8px;
+  margin: 3px;
+
+  font-family: 'Cormorant', serif;
+  font-size: 14px;
+}

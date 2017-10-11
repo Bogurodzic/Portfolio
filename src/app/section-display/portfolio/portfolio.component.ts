@@ -16,6 +16,12 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
   projects: Item[] = [
     new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-lp"),
     new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-js"),
+    new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-ang"),
+    new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-lp"),
+    new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-js"),
+    new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-ang"),
+    new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-lp"),
+    new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-js"),
     new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-ang")
   ];
 
@@ -70,6 +76,10 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
 
   filterAng(){
     this.grid.filter('.category-ang');
+  }
+
+  showProject(e){
+    console.log(e);
   }
 
 }
