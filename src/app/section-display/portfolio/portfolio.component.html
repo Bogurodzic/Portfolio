@@ -1,5 +1,5 @@
 <div class="portfolio-wrapper">
-  <app-portfolio-details [hidden]="isDetailsHidden" (exit)="onExit()" [detail]="chosedPortfolio"></app-portfolio-details>
+  <app-portfolio-details [hidden]="isDetailsHidden" (exit)="onExit()" [detail]="chosedPortfolio" [isFirst]="chosedPortfolioFirst" [isLast]="chosedPortfolioLast"></app-portfolio-details>
 
   <div class="headline">
     <h4 class="headline-intro">Portfolio</h4>
@@ -16,8 +16,8 @@
 
   <div class="grid row">
 
-    <ng-container  *ngFor="let project of projects">
-      <div class="item col-md-4 {{project.category}}" (click)="showProject(project)">
+    <ng-container  *ngFor="let project of projects; let i = index">
+      <div class="item col-md-4 {{project.category}}" (click)="showProject(project, i)">
         <div class="item-content">
           <img class="item-content__img" src="http://via.placeholder.com/600x600" alt="">
           <div class="item-content-overlay">

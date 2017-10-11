@@ -25,10 +25,34 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
       "1994.02.05",
       "woooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow ow",
       ["xd", "p"]
+    ),
+    new Item(
+      "Project 2 Testing",
+      "Landing Page",
+      "http://via.placeholder.com/666x999",
+      "category-lp",
+      "Random Client",
+      "www.google.pl",
+      "1994.02.05",
+      "woooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow ow",
+      ["xd", "p"]
+    ),
+    new Item(
+      "Project 3 Testing",
+      "Landing Page",
+      "http://via.placeholder.com/666x999",
+      "category-lp",
+      "Random Client",
+      "www.google.pl",
+      "1994.02.05",
+      "woooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow ow",
+      ["xd", "p"]
     )
   ];
 
   chosedPortfolio = this.projects[0];
+  chosedPortfolioFirst = true;
+  chosedPortfolioLast = false;
 
   constructor() { }
 
@@ -46,7 +70,6 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
     let categories = document.querySelectorAll(".portfolio-categories-list__item");
 
     [].forEach.call(categories, category => {
-      console.log(category);
 
       category.addEventListener("click", () => {
         removeClassFromAll();
@@ -82,9 +105,23 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
     this.grid.filter('.category-ang');
   }
 
-  showProject(e){
-    console.log(e);
+  showProject(projectDetails, index){
     this.isDetailsHidden = false;
+    this.chosedPortfolio = projectDetails;
+    this.checkIndexes(index);
+  }
+
+  checkIndexes(index){
+    this.checkIfFirst(index) ? this.chosedPortfolioFirst = true : this.chosedPortfolioFirst = false;
+    this.checkIfLast(index) ? this.chosedPortfolioLast = true : this.chosedPortfolioLast = false;
+  }
+
+  checkIfFirst(index){
+    return index === 0 ? true : false;
+  }
+
+  checkIfLast(index){
+    return index === this.projects.length-1 ? true : false;
   }
 
   onExit(){

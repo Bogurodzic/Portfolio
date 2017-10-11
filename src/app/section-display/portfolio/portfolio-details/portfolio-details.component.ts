@@ -17,10 +17,13 @@ export class PortfolioDetailsComponent implements OnInit {
     date: String,
     projectDescription: String
  };
+ @Input() isFirst: boolean;
+ @Input() isLast: boolean;
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this.isFirst);
   }
 
   onExit(){
