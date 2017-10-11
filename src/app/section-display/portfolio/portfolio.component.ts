@@ -11,8 +11,9 @@ import Muuri from 'muuri/muuri';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit, AfterViewInit {
-  galleryCreated = false;
   grid;
+  isDetailsHidden = true;
+
   projects: Item[] = [
     new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-lp"),
     new Item("Project 1", "wsd", "http://via.placeholder.com/666x600", "category-js"),
@@ -33,7 +34,6 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
       this.grid = new Muuri('.grid');
-      this.galleryCreated = true;
       this.addEventsForCategories();
       console.log("xD")
   }
@@ -80,6 +80,11 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
 
   showProject(e){
     console.log(e);
+    this.isDetailsHidden = false;
+  }
+
+  onExit(){
+    this.isDetailsHidden = true;
   }
 
 }
