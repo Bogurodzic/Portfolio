@@ -48,6 +48,9 @@
 
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
+  font-weight: 300;
+
+  color: lighten(black, 60%);
 
   &:hover {
     cursor: pointer;
@@ -97,7 +100,7 @@
 
 .item-content {
   position: relative;
-  height: 200px;
+  height: 300px;
 
   &:hover {
     .item-content-overlay  {
