@@ -15,10 +15,6 @@ export class PortfolioComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // console.log(Muuri.ItemAnimate);
-
-    // console.log(grid.getItems())
-    // grid.filter('[data-foo]');
     this.grid = new Muuri('.grid');
     this.addEventsForCategories();
   }

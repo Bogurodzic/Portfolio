@@ -19,7 +19,6 @@ export class MenuComponent implements OnInit {
 
   chosedSection(section){
     this.onChosedSection.emit({"section": section});
-    console.log(section);
   }
 
 }
