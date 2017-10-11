@@ -7,7 +7,7 @@
             <app-menu (onChosedSection)="changeSection($event)"></app-menu>
           </div>
           <div class="col-md-10">
-            <app-section-display></app-section-display>
+            <app-section-display [chosedSection]="section"></app-section-display>
           </div>
         </div>
       </div>

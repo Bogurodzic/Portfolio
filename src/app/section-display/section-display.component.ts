@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-section-display',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section-display.component.scss']
 })
 export class SectionDisplayComponent implements OnInit {
-  chosedSection = "home";
+  @Input() chosedSection = "home";
 
 
   constructor() { }
