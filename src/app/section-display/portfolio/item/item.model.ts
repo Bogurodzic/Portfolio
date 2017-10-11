@@ -7,6 +7,7 @@ export class Item {
     public client: string,
     public siteUrl: string,
     public date: string,
-    public projectDescription: string
+    public projectDescription: string,
+    public technologies: Array<Object>
   ){}
 }

@@ -21,11 +21,7 @@
       <div class="technology">
         <h5 class="description__headline">Technology</h5>
         <ul class="technology-list">
-          <li class="technology-list__item">jquery</li>
-          <li class="technology-list__item">jquery</li>
-          <li class="technology-list__item">jquery</li>
-          <li class="technology-list__item">jquery</li>
-          <li class="technology-list__item">jquery</li>
+          <li class="technology-list__item" *ngFor="let technology of detail.technologies">{{technology}}</li>
         </ul>
       </div>
     </div>
