@@ -5,23 +5,57 @@
   </div>
   <div class="portfolio-categories">
     <ul class="portfolio-categories-list">
-      <li class="portfolio-categories-list__item">All</li>
-      <li class="portfolio-categories-list__item">Landing Pages</li>
-      <li class="portfolio-categories-list__item">Javascript Apps</li>
-      <li class="portfolio-categories-list__item">Angular</li>
+      <li class="portfolio-categories-list__item portfolio-categories-list__item--highlited"  (click)="filterAll()">All</li>
+      <li class="portfolio-categories-list__item" (click)="filterLp()">Landing Pages</li>
+      <li class="portfolio-categories-list__item" (click)="filterJs()">Javascript Apps</li>
+      <li class="portfolio-categories-list__item" (click)="filterAng()">Angular</li>
     </ul>
   </div>
 
 
 
-  <div class="grid">
-    <div class="item" data-foo>
+  <div class="grid row">
+
+
+    <div class="item col-md-4" category-lp>
       <div class="item-content">
-        <!-- Safe zone, enter your custom markup -->
-        This can be anything.
-        <!-- Safe zone ends -->
+        <img class="item-content__img" src="http://via.placeholder.com/600x600" alt="">
       </div>
     </div>
+
+    <div class="item col-md-4" category-js>
+      <div class="item-content">
+        <img class="item-content__img" src="http://via.placeholder.com/1000x600" alt="">
+      </div>
+    </div>
+
+    <div class="item col-md-4" category-lp>
+      <div class="item-content">
+        <img class="item-content__img" src="http://via.placeholder.com/600x800" alt="">
+      </div>
+    </div>
+
+    <div class="item col-md-4" category-ang>
+      <div class="item-content">
+        <img class="item-content__img" src="http://via.placeholder.com/600x600" alt="">
+      </div>
+    </div>
+
+    <div class="item col-md-4" category-js>
+      <div class="item-content">
+        <img class="item-content__img" src="http://via.placeholder.com/1000x600" alt="">
+      </div>
+    </div>
+
+    <div class="item col-md-4" category-ang>
+      <div class="item-content">
+        <img class="item-content__img" src="http://via.placeholder.com/600x800" alt="">
+      </div>
+    </div>
+
+
   </div>
+
+
 
 </div>

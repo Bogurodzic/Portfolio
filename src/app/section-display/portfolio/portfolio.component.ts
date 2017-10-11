@@ -10,15 +10,16 @@ import Muuri from 'muuri/muuri';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
+  grid;
 
   constructor() { }
 
   ngOnInit() {
     // console.log(Muuri.ItemAnimate);
-    // var grid = new Muuri('.grid');
+
     // console.log(grid.getItems())
     // grid.filter('[data-foo]');
-
+    this.grid = new Muuri('.grid');
     this.addEventsForCategories();
   }
 
@@ -45,5 +46,21 @@ export class PortfolioComponent implements OnInit {
 
     });
   }
-  
+
+  filterAll(){
+    this.grid.filter('[category-lp],[category-js], [category-ang]');
+  }
+
+  filterLp(){
+    this.grid.filter('[category-lp]');
+  }
+
+  filterJs(){
+    this.grid.filter('[category-js]');
+  }
+
+  filterAng(){
+    this.grid.filter('[category-ang]');
+  }
+
 }
