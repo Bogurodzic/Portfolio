@@ -10,6 +10,7 @@ import { ResumeComponent } from './section-display/resume/resume.component';
 import { PortfolioComponent } from './section-display/portfolio/portfolio.component';
 import { PortfolioDetailsComponent } from './section-display/portfolio/portfolio-details/portfolio-details.component';
 import { BlogComponent } from './section-display/blog/blog.component';
+import { BlogItemComponent } from './section-display/blog/blog-item/blog-item.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BlogComponent } from './section-display/blog/blog.component';
     ResumeComponent,
     PortfolioComponent,
     PortfolioDetailsComponent,
-    BlogComponent
+    BlogComponent,
+    BlogItemComponent
   ],
   imports: [
     BrowserModule
