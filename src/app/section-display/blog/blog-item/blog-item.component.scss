@@ -21,9 +21,10 @@
 }
 
 .post-item__image {
-  background: url("/assets/img/javascript.jpg");
-  background-size: contain;
+  // background: url("/assets/img/javascript.jpg");
+  // background-size: contain;
   height: 175px;
+  width: 100%;
 }
 
 .post-item-details {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BlogItem } from './blog-item/blog-item.model';
 
 @Component({
   selector: 'app-blog',
@@ -6,11 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit {
-  tests = ["1", "2", "3", "4"];
+  posts: BlogItem[] = [
+    new BlogItem("assets/img/javascript.jpg", "Javascript", "Javascript sucks", "02", "May")
+  ]
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

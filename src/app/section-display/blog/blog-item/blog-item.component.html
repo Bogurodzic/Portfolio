@@ -1,14 +1,14 @@
 <a href="" target="_blank">
   <div class="col-md-6 blog-post-item">
     <div class="blog-post-item-outer">
-      <div class="post-item__image"></div>
+      <img class="post-item__image" src="{{blogItem.imageSrc}}">
       <div class="post-item-details">
         <div class="post-item-date">
-          <p class="post-item-date__day">05</p>
-          <p class="post-item-date__month">May</p>
+          <p class="post-item-date__day">{{blogItem.dateDay}}</p>
+          <p class="post-item-date__month">{{blogItem.dateMonth}}</p>
         </div>
-        <p class="post-item-details__category">javascript</p>
-        <h5 class="post-item-details__title">nowowosci w es5 nwoso wnosno</h5>
+        <p class="post-item-details__category">{{blogItem.category}}</p>
+        <h5 class="post-item-details__title">{{blogItem.title}}</h5>
       </div>
     </div>
   </div>

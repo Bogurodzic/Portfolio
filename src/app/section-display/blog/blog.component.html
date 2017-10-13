@@ -5,8 +5,8 @@
   </div>
   <div class="blog-posts">
     <div class="row">
-      <ng-container *ngFor="let test of tests">
-        <app-blog-item></app-blog-item>
+      <ng-container *ngFor="let post of posts">
+        <app-blog-item [blogItem]="post"></app-blog-item>
       </ng-container>
     </div>
   </div>
