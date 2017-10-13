@@ -6,11 +6,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./blog-item.component.scss']
 })
 export class BlogItemComponent implements OnInit {
-  @Input() blogItem = {imageSrc: String, category: String, title: String, dateDay: String, dateMonth: String}
+  @Input() blogItem = {imageSrc: String, category: String, title: String, dateDay: String, dateMonth: String, linkSrc: String}
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this.blogItem)
   }
 
 }
