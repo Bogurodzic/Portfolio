@@ -1,0 +1,78 @@
+//Breakpoints
+$small: 560px;
+$medium: 768px;
+$large: 992px;
+$extralarge: 1200px;
+$huge:1920px;
+
+@mixin extrasmall {
+}
+
+@mixin small {
+  @media (max-width: $small) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (max-width: $medium) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (max-width: $large) {
+    @content;
+  }
+}
+
+@mixin extralarge {
+  @media (max-width: $extralarge) {
+    @content;
+  }
+}
+
+@mixin huge {
+  @media (max-width: $huge) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media (min-width : 768px)
+  and (max-width : 1024px)  { @content; }
+}
+
+@mixin ipadPortrait {
+  @media (min-width : 768px)
+  and (max-width : 1024px)
+  and (orientation : portrait) { @content; }
+}
+
+@mixin ipadProPortrait {
+  @media only screen
+    and (min-width: 1024px)
+    and (max-width: 1366px)
+    and (orientation: portrait)
+    and (-webkit-min-device-pixel-ratio: 1.5) {@content;}
+}
+
+@mixin ipadProLandscape {
+  @media (min-width: 1024px)
+    and (max-width: 1366px)
+    and (orientation: landscape)
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+  }
+}
+
+@mixin iphone5sLandsacape {
+  @media (min-width : 320px)
+  and (max-width : 568px)
+  and (orientation : landscape) { @content; }
+}
+
+@mixin iphone5sPortrait {
+  @media (min-width : 320px)
+  and (max-width : 568px)
+  and (orientation : portrait) { @content; }
+}

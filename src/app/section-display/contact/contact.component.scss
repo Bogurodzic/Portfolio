@@ -1,0 +1,61 @@
+@import "../../../assets/scss/variables";
+
+
+.contact-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background: white;
+  padding: 30px 70px;
+  box-sizing: border-box;
+}
+
+.headline {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.headline-intro {
+  color: rgb(238, 238, 238);
+  font-size: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.headline-skills {
+  background: $mainColor;
+  padding: 2px 5px;
+  margin-left: 100px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+}
+
+.contact-headline {
+  border-left: 2px solid $mainColor;
+  padding: 5px 0 5px 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.contact-info {
+  box-sizing: border-box;
+  padding-left: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-info-item {
+  padding: 5px 0;
+}
+
+.contact-info-item__icon {
+  color: $mainColor;
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+.contact-info-item__link {
+  color: black;
+}

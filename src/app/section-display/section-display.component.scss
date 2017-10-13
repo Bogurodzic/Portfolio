@@ -21,6 +21,7 @@
   position: absolute;
   top: 40px;
   left: 40px;
+  z-index: 9999;
 
   border-left: 3px solid $mainColor;
   border-top: 3px solid $mainColor;

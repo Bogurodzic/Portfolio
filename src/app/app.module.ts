@@ -11,6 +11,7 @@ import { PortfolioComponent } from './section-display/portfolio/portfolio.compon
 import { PortfolioDetailsComponent } from './section-display/portfolio/portfolio-details/portfolio-details.component';
 import { BlogComponent } from './section-display/blog/blog.component';
 import { BlogItemComponent } from './section-display/blog/blog-item/blog-item.component';
+import { ContactComponent } from './section-display/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BlogItemComponent } from './section-display/blog/blog-item/blog-item.co
     PortfolioComponent,
     PortfolioDetailsComponent,
     BlogComponent,
-    BlogItemComponent
+    BlogItemComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule
