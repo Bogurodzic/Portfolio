@@ -1,15 +1,30 @@
+@import "../assets/scss/breakpoints";
+
+
 .container-fluid {
 }
 
-.menu-wrapper {
-  
-}
+
 
 .col-md-2 {
   width: 150px;
+
+  @include large {
+    width: 70%;
+    display: none;
+  };
+}
+
+.menu-wrapper {
+
 }
 
 .col-md-10 {
   width: calc(100% - 150px);
   padding: 0;
+
+
+  @include large {
+    width: 100%;
+  };
 }

@@ -1,4 +1,6 @@
 @import "../../assets/scss/variables";
+@import "../../assets/scss/breakpoints";
+
 
 @include scroll;
 
@@ -17,6 +19,11 @@
   height: 100px;
   margin: 0 auto;
   display: block;
+
+  @include large {
+    width: 80%;
+    height: auto;
+  };
 }
 
 .name {
