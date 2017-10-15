@@ -17,13 +17,13 @@
   <div class="grid row">
 
     <ng-container  *ngFor="let project of projects; let i = index">
-      <div class="item col-md-3 {{project.category}}" (click)="showProject(project, i)">
+      <div class="item {{project.category}}" (click)="showProject(project, i)">
         <div class="item-content">
-          <img class="item-content__img" src="http://via.placeholder.com/600x600" alt="">
+          <img class="item-content__img" src={{project.projectImage}} alt="">
           <div class="item-content-overlay">
-            <h5 class="item-content-overlay__name">Project 1 name</h5>
+            <h5 class="item-content-overlay__name">{{project.projectName}}</h5>
             <div class="item-content-overlay-menu">
-              <p class="item-content-overlay-menu__name">Landing Page</p>
+              <p class="item-content-overlay-menu__name">{{project.projectType}}</p>
               <i class="devicon-javascript-plain item-content-overlay-menu__icon"></i>
             </div>
           </div>

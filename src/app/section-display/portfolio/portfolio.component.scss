@@ -1,4 +1,5 @@
 @import "../../../assets/scss/variables";
+@import "../../../assets/scss/breakpoints";
 
 
 .portfolio-wrapper {
@@ -8,6 +9,10 @@
   background: white;
   padding: 30px 70px;
   box-sizing: border-box;
+
+  @include small {
+    padding: 30px;
+  };
 }
 
 .headline {
@@ -21,6 +26,10 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin-bottom: 0px;
+
+  @include large {
+    font-size: 40px;
+  };
 }
 
 .headline-skills {
@@ -30,6 +39,11 @@
   color: white;
   font-family: 'Open Sans', sans-serif;
   display: inline-block;
+
+  @include large {
+    padding: 1px 3px;
+    font-size: 12px;
+  };
 }
 
 .portfolio-categories {
@@ -52,6 +66,12 @@
   font-weight: 300;
 
   color: lighten(black, 60%);
+
+  @include small {
+    font-size: 10px;
+    padding: 2.5px 5px;
+    margin-bottom: 15px;
+  };
 
   &:hover {
     cursor: pointer;
@@ -76,6 +96,8 @@
 }
 
 .row {
+  display: flex;
+  flex-wrap: wrap;
 }
 .item {
   display: block;
@@ -84,9 +106,30 @@
 
   z-index: 1;
 
-}
-.col-md-3 {
   width: 24%;
+  padding: 20px;
+
+  @include large {
+    width: 32%;
+    padding: 10px;
+  };
+
+  @include medium {
+    width: 49%;
+  };
+
+  @include small {
+    width: 100%;
+    padding: 10px;
+  };
+}
+
+.col-lg-3 {
+  width: 25%;
+}
+
+.col-md-3 {
+  width: 33%;
 }
 
 .col-md-4 {
@@ -106,7 +149,7 @@
 
 .item-content {
   position: relative;
-  height: 200px;
+  height: 150px;
 
   &:hover {
     .item-content-overlay  {
