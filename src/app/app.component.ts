@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  section = "home"
+  section = "home";
 
   constructor() { }
 
@@ -16,7 +16,22 @@ export class AppComponent implements OnInit{
 
   changeSection(data: {section: string}){
     this.section = data.section;
+    this.toggleMenu();
+  }
 
-    console.log(this.section);
+  showMenu(){
+    document.getElementById("menu").classList.add("showMenu")
+    document.getElementById("menu").classList.remove("hideMenu")
+    console.log("show");
+  }
+
+  hideMenu(){
+    document.getElementById("menu").classList.add("hideMenu")
+    document.getElementById("menu").classList.remove("showMenu")
+    console.log("show");
+  }
+
+  toggleMenu(){
+    document.getElementById("menu").classList.contains("showMenu") ? this.hideMenu() : this.showMenu();
   }
 }
