@@ -22,13 +22,11 @@ export class AppComponent implements OnInit{
   showMenu(){
     document.getElementById("menu").classList.add("showMenu")
     document.getElementById("menu").classList.remove("hideMenu")
-    console.log("show");
   }
 
   hideMenu(){
     document.getElementById("menu").classList.add("hideMenu")
     document.getElementById("menu").classList.remove("showMenu")
-    console.log("show");
   }
 
   toggleMenu(){

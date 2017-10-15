@@ -11,7 +11,6 @@ export class BlogItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.blogItem)
   }
 
 }

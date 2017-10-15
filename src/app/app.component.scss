@@ -28,11 +28,15 @@
 }
 
 .showMenu {
-  @include animation(0s, 1s, "showFromRight");
+  @include large {
+    @include animation(0s, 1s, "showFromRight");
+  };
 }
 
 .hideMenu {
-  @include animation(0s, 1s, "hideFromRight");
+  @include large {
+    @include animation(0s, 1s, "hideFromRight");
+  };
 }
 
 .menu-wrapper {
@@ -50,17 +54,21 @@
 }
 
 .menu {
-  height: 50px;
-  background: white;
+  display: none;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include large {
+    height: 50px;
+    background: white;
 
-  border-bottom: 1px solid lighten(black, 80%);
-  position: fixed;
-  z-index: 9999;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid lighten(black, 80%);
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+  };
 }
 
 .menu-item {

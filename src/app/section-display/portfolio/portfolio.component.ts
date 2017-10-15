@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, AfterViewChecked, AfterContentInit, AfterContentChecked } from '@angular/core';
 import { Item } from "./item/item.model";
 import * as velocity from 'velocity-animate/velocity';
 import Muuri from 'muuri/muuri';
@@ -10,9 +10,10 @@ import Muuri from 'muuri/muuri';
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss']
 })
-export class PortfolioComponent implements OnInit, AfterViewInit {
+export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewChecked, AfterContentChecked {
   grid;
   isDetailsHidden = true;
+  gridInit = 0;
 
   projects: Item[] = [
     new Item(
@@ -72,9 +73,25 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
 
   }
 
-  ngAfterViewInit() {
+  ngAfterViewChecked(){
+
+  }
+
+  ngAfterContentInit() {
+
+  }
+
+  ngAfterContentChecked() {
+    if(this.gridInit < 3){
+      this.gridInit++;
       this.grid = new Muuri('.grid');
       this.addEventsForCategories();
+      console.log("content checked")
+    }
+  }
+
+  ngAfterViewInit() {
+
   }
 
   addEventsForCategories(){
