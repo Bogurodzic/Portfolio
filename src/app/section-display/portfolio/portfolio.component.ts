@@ -31,7 +31,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
       "Project 2 Testing",
       "Landing Page",
       "http://via.placeholder.com/666x999",
-      "category-lp",
+      "category-js",
       "Random Client",
       "www.google.pl",
       "1994.02.05",
@@ -42,7 +42,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
       "Project 3 Testing",
       "Landing Page",
       "http://via.placeholder.com/666x999",
-      "category-lp",
+      "category-ang",
       "Random Client",
       "www.google.pl",
       "1994.02.05",
@@ -53,7 +53,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
       "Project 4 Testing",
       "Landing Page",
       "http://via.placeholder.com/666x999",
-      "category-lp",
+      "category-ang",
       "Random Client",
       "www.google.pl",
       "1994.02.05",
@@ -74,7 +74,11 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
   }
 
   ngAfterViewChecked(){
-
+    if(this.gridInit < 4){
+      this.gridInit++;
+      this.grid = new Muuri('.grid');
+      this.addEventsForCategories();
+    }
   }
 
   ngAfterContentInit() {
@@ -82,11 +86,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
   }
 
   ngAfterContentChecked() {
-    if(this.gridInit < 4){
-      this.gridInit++;
-      this.grid = new Muuri('.grid');
-      this.addEventsForCategories();
-    }
+
   }
 
   ngAfterViewInit() {

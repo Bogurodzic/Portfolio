@@ -1,11 +1,11 @@
-import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio-details',
   templateUrl: './portfolio-details.component.html',
   styleUrls: ['./portfolio-details.component.scss']
 })
-export class PortfolioDetailsComponent implements OnInit {
+export class PortfolioDetailsComponent implements OnInit, AfterViewInit {
   @Output() exit = new EventEmitter();
   @Output() left = new EventEmitter();
   @Output() right = new EventEmitter();
@@ -27,6 +27,9 @@ export class PortfolioDetailsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  ngAfterViewInit(){
   }
 
   onExit(){
