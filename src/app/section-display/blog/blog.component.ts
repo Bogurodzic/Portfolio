@@ -8,7 +8,8 @@ import { BlogItem } from './blog-item/blog-item.model';
 })
 export class BlogComponent implements OnInit {
   posts: BlogItem[] = [
-    new BlogItem("assets/img/javascript.jpg", "Javascript", "Javascript sucks", "02", "May", "https://github.com/Bogurodzic")
+    new BlogItem("assets/img/javascript.jpg", "Javascript", "Javascript sucks", "02", "May", "https://github.com/Bogurodzic"),
+    new BlogItem("assets/img/javascript.jpg", "Javascript", "Javascript sucks", "03", "May", "https://github.com/Bogurodzic")
   ]
 
   constructor() { }

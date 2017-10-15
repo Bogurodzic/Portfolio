@@ -1,4 +1,6 @@
 @import "../../../assets/scss/variables";
+@import "../../../assets/scss/breakpoints";
+
 
 
 .blog-wrapper {
@@ -20,6 +22,10 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin-bottom: 0px;
+
+  @include large {
+    font-size: 40px;
+  };
 }
 
 .headline-skills {
@@ -29,9 +35,18 @@
   color: white;
   font-family: 'Open Sans', sans-serif;
   display: inline-block;
+
+  @include large {
+    padding: 1px 3px;
+    font-size: 12px;
+  };
 }
 
 .blog-posts {
   box-sizing: border-box;
   padding: 0 60px;
+
+  @include large {
+    padding: 0;
+  };
 }

@@ -1,4 +1,6 @@
 @import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/breakpoints";
+
 
 .blog-post-item {
   box-sizing: border-box;
@@ -13,6 +15,13 @@
     }
   }
 
+  @include medium {
+    height: 70vh;
+  };
+
+  @include small {
+    height: 50vh;
+  };
 }
 
 .blog-post-item-outer {
@@ -25,6 +34,10 @@
   // background-size: contain;
   height: 175px;
   width: 100%;
+
+  @include medium {
+    height: 70%;
+  };
 }
 
 .post-item-details {
@@ -39,6 +52,14 @@
   font-size: 14px;
   font-weight: 300;
   color: lighten(black, 60%);
+
+  @include medium {
+    font-size: 16px;
+  };
+
+  @include small {
+    font-size: 10px;
+  };
 }
 
 .post-item-details__title {
@@ -48,6 +69,14 @@
   font-size: 16px;
   font-weight: 700;
   color: black;
+
+  @include medium {
+    font-size: 18px;
+  };
+
+  @include small {
+    font-size: 12px;
+  };
 }
 
 .post-item-date {
@@ -59,6 +88,12 @@
   right: 25px;
   top: 0;
   transform: translateY(-50%);
+
+  @include small {
+    width: 40px;
+    height: 45px;
+    right: 18px;
+  };
 }
 
 .post-item-date__day {
@@ -69,6 +104,10 @@
   color: white;
   font-weight: 700;
   text-align: center;
+
+  @include small {
+    font-size: 12px;
+  };
 }
 
 .post-item-date__month {
@@ -77,4 +116,8 @@
   font-size: 12px;
   color: white;
   text-align: center;
+
+  @include small {
+    font-size: 10px;
+  };
 }
