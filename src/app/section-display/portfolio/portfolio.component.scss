@@ -13,6 +13,10 @@
   @include large {
     padding-top: 60px;
   };
+
+  @include small {
+    padding: 60px 20px;
+  };
 }
 
 .headline {
@@ -43,6 +47,11 @@
   @include large {
     padding: 1px 3px;
     font-size: 12px;
+  };
+
+  @include small {
+    padding: 1px;
+    font-size: 10px;
   };
 }
 

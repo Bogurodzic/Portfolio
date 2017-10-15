@@ -82,11 +82,10 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
   }
 
   ngAfterContentChecked() {
-    if(this.gridInit < 3){
+    if(this.gridInit < 4){
       this.gridInit++;
       this.grid = new Muuri('.grid');
       this.addEventsForCategories();
-      console.log("content checked")
     }
   }
 
