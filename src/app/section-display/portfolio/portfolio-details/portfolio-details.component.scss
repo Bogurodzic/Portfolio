@@ -1,8 +1,14 @@
 @import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/breakpoints";
+
 
 .project-details {
   box-sizing: border-box;
   padding: 20px 60px;
+
+  @include large {
+    padding: 30px 30px;
+  };
 }
 
 .menu {
@@ -17,6 +23,10 @@
     cursor: pointer;
     color: $mainColor;
   }
+
+  @include large {
+    font-size: 20px;
+  };
 }
 
 .project-name {
@@ -25,16 +35,37 @@
   font-weight: 700;
   text-align: center;
   padding: 25px 0;
+
+  @include large {
+    padding-bottom: 20px;
+  };
 }
 
 .item-content__img {
-  width: 100%;
+  width: 90%;
   height: auto;
   max-height: 600px;
+  display: block;
+  margin: 0 auto;
+
+  @include large {
+    width: 80%;
+  };
+
+  @include medium {
+    width: 70%;
+  };
+
+  @include small{
+    width: 80%;
+  };
 }
 
 .description {
 
+  @include large {
+    margin-top: 25px;
+  };
 }
 
 .description__headline {
@@ -43,12 +74,28 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 19px;
+
+  @include large {
+    font-size: 21px;
+  };
+
+  @include medium {
+    font-size: 18px;
+  };
 }
 
 .description-item {
   font-family: 'Cormorant', serif;
   font-size: 16px;
   font-weight: 300;
+
+  @include large {
+    font-size: 18px;
+  };
+
+  @include medium {
+    font-size: 16px;
+  };
 }
 
 .description-item__icon{
@@ -62,6 +109,14 @@
   font-weight: 300;
   padding: 10px;
   margin-bottom: 10px;
+
+  @include large {
+    font-size: 16px;
+  };
+
+  @include medium {
+    font-size: 14px;
+  };
 }
 
 .technology-list {
@@ -79,4 +134,12 @@
 
   font-family: 'Cormorant', serif;
   font-size: 14px;
+
+  @include large {
+    font-size: 16px;
+  };
+
+  @include medium {
+    font-size: 14px;
+  };
 }

@@ -29,8 +29,7 @@
   border-top: 3px solid $mainColor;
 
   @include large {
-    top: 15px;
-    left: 15px;
+    display: none;
   };
 }
 

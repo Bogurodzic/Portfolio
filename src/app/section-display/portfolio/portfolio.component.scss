@@ -157,6 +157,10 @@
       cursor: pointer;
     }
   }
+
+  @include small {
+    height: 200px;
+  };
 }
 
 .item-content__img {
