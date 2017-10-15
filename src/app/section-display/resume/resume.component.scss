@@ -1,4 +1,6 @@
 @import "../../../assets/scss/variables";
+@import "../../../assets/scss/breakpoints";
+
 
 
 .resume-wrapper {
@@ -20,6 +22,10 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin-bottom: 0px;
+
+  @include large {
+    font-size: 40px;
+  };
 }
 
 .headline-skills {
@@ -29,11 +35,20 @@
   color: white;
   font-family: 'Open Sans', sans-serif;
   display: inline-block;
+
+  @include large {
+    padding: 1px 3px;
+    font-size: 12px;
+  };
 }
 
 .resume {
   box-sizing: border-box;
   padding: 0 50px;
+
+  @include large {
+    padding: 0;
+  };
 }
 
 .resume-headline {
@@ -42,6 +57,10 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 19px;
+
+  @include large {
+    font-size: 18px;
+  };
 }
 
 .history {
@@ -74,6 +93,14 @@
   font-weight: 300;
   color: white;
   margin: 0;
+
+  @include large {
+    font-size: 12px;
+  };
+
+  @include medium {
+    font-size: 14px;
+  };
 }
 
 .history-item__headline, .experience-item__headline {
@@ -83,6 +110,14 @@
   color: black;
 
   margin: 0;
+
+  @include large {
+    font-size: 13px;
+  };
+
+  @include medium {
+    font-size: 15px;
+  };
 }
 
 .history-item__short, .experience-item__short {
@@ -91,6 +126,13 @@
   font-weight: 300;
   color: #A5A5A5;
 
+  @include large {
+    font-size: 13px;
+  };
+
+  @include medium {
+    font-size: 15px;
+  };
 }
 
 .history-item__description, .experience-item__description {
@@ -98,6 +140,14 @@
   font-size: 12px;
   line-height: 20px;
   color: #555555;
+
+  @include large {
+    font-size: 11px;
+  };
+
+  @include medium {
+    font-size: 13px;
+  };
 }
 
 .skills-wrapper {
@@ -112,6 +162,14 @@
 .skill-item__name {
   margin: 0;
   margin-top: 10px;
+
+  @include large {
+    font-size: 12px;
+  };
+
+  @include medium {
+    font-size: 14px;
+  };
 }
 
 .skill-item-container {
