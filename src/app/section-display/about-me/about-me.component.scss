@@ -1,4 +1,5 @@
 @import "../../../assets/scss/variables";
+@import "../../../assets/scss/breakpoints";
 
 
 .container {
@@ -6,7 +7,7 @@
 }
 
 .about-me-wrapper {
-  width: 100%; 
+  width: 100%;
   min-height: 100%;
   background: white;
   padding: 30px;
@@ -24,6 +25,10 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin-bottom: 0px;
+
+  @include large {
+    font-size: 40px;
+  };
 }
 
 .headline-skills {
@@ -33,6 +38,11 @@
   color: white;
   font-family: 'Open Sans', sans-serif;
   display: inline-block;
+
+  @include large {
+    padding: 1px 3px;
+    font-size: 12px;
+  };
 }
 
 .bio {
@@ -42,6 +52,11 @@
 .bio .container {
   padding-left: 50px;
   padding-right: 50px;
+
+  @include large {
+    padding-left: 10px;
+    padding-right: 10px;
+  };
 }
 
 .bio-img {
@@ -51,6 +66,15 @@
 .bio-img_item {
   width: 100%;
   height: auto;
+
+  @include medium {
+    width: 50%;
+    margin-bottom: 15px;
+  };
+
+  @include small {
+    width: 80%;
+  };
 }
 
 .bio-info {
@@ -61,6 +85,14 @@
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
   font-size: 19px;
+
+  @include large {
+    font-size: 16px;
+  };
+
+  @include medium {
+    font-size: 18px;
+  };
 }
 
 .bio-info__text {
@@ -68,6 +100,14 @@
   font-family: 'Open Sans', sans-serif;
   line-height: 22px;
   font-weight: 300;
+
+  @include large {
+    font-size: 12px;
+  };
+
+  @include medium {
+    font-size: 14px;
+  };
 }
 
 .bio-details {
@@ -79,6 +119,14 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   border-bottom: 2px solid $mainColor;
+
+  @include large {
+    font-size: 12px;
+  };
+
+  @include medium {
+    font-size: 14px;
+  };
 }
 
 .bio-details__item {
@@ -86,6 +134,14 @@
   font-size: 16px;
   font-family: 'Cormorant', serif;
   font-weight: 300;
+
+  @include large {
+    font-size: 14px;
+  };
+
+  @include medium {
+    font-size: 16px;
+  };
 }
 
 .bio-details-social {
@@ -117,6 +173,10 @@
 .service {
   box-sizing: border-box;
   padding: 0 20px;
+
+  @include medium {
+    padding: 0;
+  };
 }
 
 .service-item {
@@ -128,6 +188,10 @@
   height: 120px;
   margin: auto;
   display: block;
+
+  @include large {
+    height: 100px;
+  };
 }
 
 .service-item__name {
@@ -139,6 +203,12 @@
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
+
+  @include large {
+    font-size: 14px;
+  };
+
+
 }
 
 .service-item__description {
@@ -146,11 +216,30 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-align: center;
+
+  @include large {
+    font-size: 12px;
+  };
+}
+
+.skills {
+  @include medium {
+    display: flex;
+    flex-wrap: wrap;
+  };
 }
 
 .skill {
   font-size: 65px;
   text-align: center;
+
+  @include medium {
+    width: 16%;
+  };
+
+  @include small {
+    width: 33%;
+  };
 
   &:hover {
     color: $mainColor;
