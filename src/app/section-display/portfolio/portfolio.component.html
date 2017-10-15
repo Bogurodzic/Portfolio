@@ -19,7 +19,7 @@
     <ng-container  *ngFor="let project of projects; let i = index">
       <div class="item {{project.category}}" (click)="showProject(project, i)">
         <div class="item-content">
-          <img class="item-content__img" src={{project.projectImage}} alt="">
+          <div class="item-content__img" [ngStyle]="{'background': '#fff url(' + project.projectImage + ')'}"></div>
           <div class="item-content-overlay">
             <h5 class="item-content-overlay__name">{{project.projectName}}</h5>
             <div class="item-content-overlay-menu">

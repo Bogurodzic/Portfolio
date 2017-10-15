@@ -17,48 +17,88 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
 
   projects: Item[] = [
     new Item(
-      "Project 1 Testing",
+      "Vintage Care",
       "Landing Page",
-      "http://via.placeholder.com/666x999",
+      "assets/img/portfolio/vintage.png",
       "category-lp",
-      "Random Client",
-      "www.google.pl",
-      "1994.02.05",
-      "woooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow ow",
-      ["xd", "p"]
+      "Vintage Care",
+      "http://vintagecare.pl",
+      "2017.05.15",
+      "Landing page created for Vintage Care",
+      ["HTML5", "CSS3", "Javascript", "SASS", "Gulp"]
     ),
+
     new Item(
-      "Project 2 Testing",
+      "Pillow",
       "Landing Page",
-      "http://via.placeholder.com/666x999",
+      "assets/img/portfolio/pillow.jpg",
+      "category-lp",
+      "Private Project",
+      "http://www.kamiljarzab.pl/Projekty/PSD-Pillow/",
+      "2017.02.10",
+      "Landing page created for private purpose",
+      ["HTML5", "CSS3", "Javascript", "SASS", "Gulp"]
+    ),
+
+    new Item(
+      "Portfolio",
+      "Landing Page",
+      "assets/img/portfolio/portfolio.jpg",
+      "category-lp",
+      "Private Project",
+      "http://www.kamiljarzab.pl/Projekty/PSD-Portfolio/index.html",
+      "2017.02.02",
+      "Landing page created for private purpose",
+      ["HTML5", "CSS3", "Javascript", "SASS", "Gulp"]
+    ),
+
+    new Item(
+      "Simon Game",
+      "Javascript",
+      "assets/img/portfolio/simon.png",
       "category-js",
-      "Random Client",
-      "www.google.pl",
-      "1994.02.05",
-      "woooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow ow",
-      ["xd", "p"]
+      "Freecodecamp",
+      "http://kamiljarzab.pl/Projekty/Simon-Game/",
+      "2017.10.06",
+      "Simon Game. You are presented with a random series of button presses. Each time you input a series of button presses correctly, You see the same series of button presses but with an additional step. Reach 20 steps in order to win. It is Freecodecamp project",
+      ["HTML5", "CSS3", "SASS", "Javascript", "Gulp", "Webpack"]
     ),
+
     new Item(
-      "Project 3 Testing",
-      "Landing Page",
-      "http://via.placeholder.com/666x999",
-      "category-ang",
-      "Random Client",
-      "www.google.pl",
-      "1994.02.05",
-      "woooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow ow",
-      ["xd", "p"]
+      "Tic-Tac-Toe",
+      "Javascript",
+      "assets/img/portfolio/tic-tac.png",
+      "category-js",
+      "Freecodecamp",
+      "http://kamiljarzab.pl/Projekty/tic-tac-toe/",
+      "2017.10.02",
+      "Tic Tac Toe game. You can play with friend or with computer. It is Freecodecamp project",
+      ["HTML5", "CSS3", "SASS", "Javascript", "Gulp", "Webpack"]
     ),
+
+
     new Item(
-      "Project 4 Testing",
-      "Landing Page",
-      "http://via.placeholder.com/666x999",
-      "category-ang",
-      "Random Client",
-      "www.google.pl",
-      "1994.02.05",
-      "woooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow owwoooo wowoooooow wowowowowoowowowow  w ow w owo wo o wo wo wowo wo wo w  w owow o w ow ow ow",
-      ["xd", "p"]
+      "Neighborhood Map",
+      "Javascript",
+      "assets/img/portfolio/map.png",
+      "category-js",
+      "Udacity",
+      "http://kamiljarzab.pl/Projekty/Neighborhood%20Map%20New/",
+      "2016.11.02",
+      "Another Udacity Nanodegree Project. On the site you will fin filtered search engine of popular Warsaw locations. Access info about marks by clicking them from the list or from the map. Mark's info provided by wikipedia(en).",
+      ["HTML5", "CSS3", "SASS", "Javascript", "Gulp", "Webpack", "Ajax", "Wikipedia API", "Google API"]
+    ),
+
+    new Item(
+      "Arcade Game",
+      "Javascript",
+      "assets/img/portfolio/frogger.jpg",
+      "category-js",
+      "Udacity",
+      "http://www.kamiljarzab.pl/Projekty/Arcade/index.html",
+      "2016.10.11",
+      "My first javascript app. It is simple arcade game made for Udacity Nanodegree Project.",
+      ["HTML5", "CSS3", "Canvas", "Javascript"]
     )
   ];
 
@@ -74,7 +114,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
   }
 
   ngAfterViewChecked(){
-    if(this.gridInit < 4){
+    if(this.gridInit < 5){
       this.gridInit++;
       this.grid = new Muuri('.grid');
       this.addEventsForCategories();
@@ -118,18 +158,27 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
 
   filterAll(){
     this.grid.filter('.category-lp, .category-js, .category-ang');
+
   }
 
   filterLp(){
+    this.grid.filter('.category-js');
+
     this.grid.filter('.category-lp');
+
   }
 
   filterJs(){
+    this.grid.filter('.category-lp');
     this.grid.filter('.category-js');
+
   }
 
   filterAng(){
+    this.grid.filter('.category-lp');
+
     this.grid.filter('.category-ang');
+
   }
 
   showProject(projectDetails, index){

@@ -175,6 +175,9 @@
 .item-content__img {
   width: 100%;
   height: 100%;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
 .item-content-overlay {
@@ -192,7 +195,7 @@
   box-sizing: border-box;
   padding: 15px;
 
-  background: rgba(244,244,244, 0.3);
+  background: rgba(244,244,244, 0.7);
 }
 
 .item-content-overlay__name {
