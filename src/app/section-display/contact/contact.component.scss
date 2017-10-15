@@ -1,4 +1,6 @@
 @import "../../../assets/scss/variables";
+@import "../../../assets/scss/breakpoints";
+
 
 
 .contact-wrapper {
@@ -8,6 +10,10 @@
   background: white;
   padding: 30px 70px;
   box-sizing: border-box;
+
+  @include large {
+    padding-top: 60px;
+  };
 }
 
 .headline {
