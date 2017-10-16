@@ -99,6 +99,18 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
       "2016.10.11",
       "My first javascript app. It is simple arcade game made for Udacity Nanodegree Project.",
       ["HTML5", "CSS3", "Canvas", "Javascript"]
+    ),
+
+    new Item(
+      "Markdown Previewer",
+      "Angular",
+      "assets/img/portfolio/mark.png",
+      "category-ang",
+      "Private",
+      "http://www.kamiljarzab.pl/Projekty/dist/",
+      "2017.10.09",
+      "Simple Markdown Previewer. You can type GitHub-flavored Markdown into a text area and see a preview of the output.",
+      ["HTML5", "CSS3", "Sass", "AngularJS", "Typescript"]
     )
   ];
 

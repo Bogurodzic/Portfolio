@@ -158,7 +158,7 @@
 
 .item-content {
   position: relative;
-  height: 150px;
+  height: 20vh;
 
   &:hover {
     .item-content-overlay  {
@@ -175,9 +175,9 @@
 .item-content__img {
   width: 100%;
   height: 100%;
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
+  // background-size: cover !important;
+  // background-position: center !important;
+  // background-repeat: no-repeat !important;
 }
 
 .item-content-overlay {
