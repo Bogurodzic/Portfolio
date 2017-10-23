@@ -92,7 +92,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
     new Item(
       "Arcade Game",
       "Javascript",
-      "assets/img/portfolio/frogger.jpg",
+      "assets/img/portfolio/frogger.png",
       "category-js",
       "Udacity",
       "http://www.kamiljarzab.pl/Projekty/Arcade/index.html",

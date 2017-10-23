@@ -42,14 +42,14 @@
 }
 
 .item-content__img {
-  width: 90%;
-  height: auto;
+  width: 100%;
+  height: 450px;
   max-height: 600px;
   display: block;
   margin: 0 auto;
 
-  @include large {
-    width: 80%;
+  @include extralarge {
+    height: 350px;
   };
 
   @include medium {
