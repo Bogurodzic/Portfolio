@@ -18,7 +18,8 @@ export class PortfolioDetailsComponent implements OnInit, AfterViewInit {
     client: String,
     siteUrl: String,
     date: String,
-    projectDescription: String
+    projectDescription: String,
+    cover: String
  };
 
  @Input() isFirst: boolean;

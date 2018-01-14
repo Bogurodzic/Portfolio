@@ -8,6 +8,7 @@ export class Item {
     public siteUrl: string,
     public date: string,
     public projectDescription: string,
-    public technologies: Array<Object>
+    public technologies: Array<Object>,
+    public cover: string
   ){}
 }

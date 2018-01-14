@@ -17,6 +17,32 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
 
   projects: Item[] = [
     new Item(
+      "Portfolio Gabriela",
+      "Single Page Application",
+      "assets/img/portfolio/gabi-portfolio.jpg",
+      "category-lp",
+      "Gabriela Szajda",
+      "http://gabrielaszajda.pl",
+      "2018.01.05",
+      "Portfolio created for Gabriela Szajda",
+      ["HTML5", "CSS3", "Javascript", "Vue.js", "SASS", "Gulp", "Webpack"],
+      "assets/img/portfolio/gabi-portfolio-cover.png"
+    ),
+
+    new Item(
+      "UKKONE OY",
+      "Landing Page",
+      "assets/img/portfolio/ukkone.png",
+      "category-lp",
+      "UKKONE OY",
+      "http://ukkone.fi",
+      "2017.04.15",
+      "Landing Page created for UKKONE OY",
+      ["HTML5", "CSS3", "Javascript"],
+      "assets/img/portfolio/ukkone-cover.png"
+    ),
+
+    new Item(
       "Vintage Care",
       "Landing Page",
       "assets/img/portfolio/vintage.png",
@@ -25,7 +51,8 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
       "http://vintagecare.pl",
       "2017.05.15",
       "Landing page created for Vintage Care",
-      ["HTML5", "CSS3", "Javascript", "SASS", "Gulp"]
+      ["HTML5", "CSS3", "Javascript", "SASS", "Gulp"],
+      "assets/img/portfolio/vintage-cover.png"
     ),
 
     new Item(
@@ -34,10 +61,11 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
       "assets/img/portfolio/pillow.jpg",
       "category-lp",
       "Private Project",
-      "http://www.kamiljarzab.pl/Projekty/PSD-Pillow/",
+      "http://kamil.webheroes.io/Projekty/Pillow/",
       "2017.02.10",
       "Landing page created for private purpose",
-      ["HTML5", "CSS3", "Javascript", "SASS", "Gulp"]
+      ["HTML5", "CSS3", "Javascript", "SASS", "Gulp"],
+      "assets/img/portfolio/pillow.jpg",
     ),
 
     new Item(
@@ -46,10 +74,24 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
       "assets/img/portfolio/portfolio.jpg",
       "category-lp",
       "Private Project",
-      "http://www.kamiljarzab.pl/Projekty/PSD-Portfolio/index.html",
+      "http://kamil.webheroes.io/Projekty/PSD-Portfolio/",
       "2017.02.02",
       "Landing page created for private purpose",
-      ["HTML5", "CSS3", "Javascript", "SASS", "Gulp"]
+      ["HTML5", "CSS3", "Javascript", "SASS", "Gulp"],
+      "assets/img/portfolio/portfolio.jpg",
+    ),
+
+    new Item(
+      "Ciabbatta",
+      "Wordpress Site",
+      "assets/img/portfolio/ciabbatta.png",
+      "category-lp",
+      "Ciabbatta",
+      "http://www.ciabbatta.pl",
+      "2017.10.10",
+      "Wordpress page, based on template, created for Ciabbatta Catering",
+      ["HTML5", "CSS3", "Javascript", "Php"],
+      "assets/img/portfolio/ciabbatta-cover.png",
     ),
 
     new Item(
@@ -58,22 +100,26 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
       "assets/img/portfolio/simon.png",
       "category-js",
       "Freecodecamp",
-      "http://kamiljarzab.pl/Projekty/Simon-Game/",
+      "http://kamil.webheroes.io/Projekty/Simon/",
       "2017.10.06",
       "Simon Game. You are presented with a random series of button presses. Each time you input a series of button presses correctly, You see the same series of button presses but with an additional step. Reach 20 steps in order to win. It is Freecodecamp project",
-      ["HTML5", "CSS3", "SASS", "Javascript", "Gulp", "Webpack"]
+      ["HTML5", "CSS3", "SASS", "Javascript", "Gulp", "Webpack"],
+      "assets/img/portfolio/simon-cover.png"
+
     ),
 
     new Item(
       "Tic-Tac-Toe",
       "Javascript",
-      "assets/img/portfolio/tic-tac.png",
+      "assets/img/portfolio/tic-tac-toe.png",
       "category-js",
       "Freecodecamp",
-      "http://kamiljarzab.pl/Projekty/tic-tac-toe/",
+      "http://kamil.webheroes.io/Projekty/tictactoe/",
       "2017.10.02",
       "Tic Tac Toe game. You can play with friend or with computer. It is Freecodecamp project",
-      ["HTML5", "CSS3", "SASS", "Javascript", "Gulp", "Webpack"]
+      ["HTML5", "CSS3", "SASS", "Javascript", "Gulp", "Webpack"],
+      "assets/img/portfolio/tic-tac-toe-cover.png",
+
     ),
 
 
@@ -83,22 +129,26 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
       "assets/img/portfolio/map.png",
       "category-js",
       "Udacity",
-      "http://kamiljarzab.pl/Projekty/Neighborhood%20Map%20New/",
+      "http://kamil.webheroes.io/Projekty/Map",
       "2016.11.02",
       "Another Udacity Nanodegree Project. On the site you will fin filtered search engine of popular Warsaw locations. Access info about marks by clicking them from the list or from the map. Mark's info provided by wikipedia(en).",
-      ["HTML5", "CSS3", "SASS", "Javascript", "Gulp", "Webpack", "Ajax", "Wikipedia API", "Google API"]
+      ["HTML5", "CSS3", "SASS", "Javascript", "Gulp", "Webpack", "Ajax", "Wikipedia API", "Google API"],
+      "assets/img/portfolio/map-cover.png"
+
     ),
 
     new Item(
       "Arcade Game",
       "Javascript",
-      "assets/img/portfolio/frogger.png",
+      "assets/img/portfolio/arcade.png",
       "category-js",
       "Udacity",
-      "http://www.kamiljarzab.pl/Projekty/Arcade/index.html",
+      "http://kamil.webheroes.io/Projekty/Arcade/",
       "2016.10.11",
       "My first javascript app. It is simple arcade game made for Udacity Nanodegree Project.",
-      ["HTML5", "CSS3", "Canvas", "Javascript"]
+      ["HTML5", "CSS3", "Canvas", "Javascript"],
+      "assets/img/portfolio/arcade-cover.png"
+
     ),
 
     new Item(
@@ -107,10 +157,12 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
       "assets/img/portfolio/mark.png",
       "category-ang",
       "Private",
-      "http://www.kamiljarzab.pl/Projekty/dist/",
+      "http://kamil.webheroes.io/Projekty/mark/",
       "2017.10.09",
       "Simple Markdown Previewer. You can type GitHub-flavored Markdown into a text area and see a preview of the output.",
-      ["HTML5", "CSS3", "Sass", "AngularJS", "Typescript"]
+      ["HTML5", "CSS3", "Sass", "AngularJS", "Typescript"],
+      "assets/img/portfolio/mark-cover.png"
+
     )
   ];
 
