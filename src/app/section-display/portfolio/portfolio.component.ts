@@ -43,16 +43,16 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
     ),
 
     new Item(
-      "Portfolio Gabriela",
-      "Single Page Application",
-      "assets/img/portfolio/gabi-portfolio.jpg",
+      "Urban Quest",
+      "Landing Page",
+      "assets/img/portfolio/urban.png",
       "category-lp",
-      "Gabriela Szajda",
-      "http://gabrielaszajda.pl",
-      "2018.01.05",
-      "Portfolio created for Gabriela Szajda",
-      ["HTML5", "CSS3", "Javascript", "Vue.js", "SASS", "Gulp", "Webpack"],
-      "assets/img/portfolio/gabi-portfolio-cover.png"
+      "Skanska",
+      "http://skanska.blpoland.com/en/",
+      "2018.02.15",
+      "Landing Page created for Urban Quest powered by Skanska",
+      ["HTML5", "CSS3", "Javascript", "jQuery", "Php", "Gulp"],
+      "assets/img/portfolio/urban-cover.png"
     ),
 
     new Item(
@@ -66,6 +66,19 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
       "Wordpress page, based on a template, created for Ciabbatta Catering",
       ["HTML5", "CSS3", "Javascript", "Php", "Wordpress", "MySQL"],
       "assets/img/portfolio/ciabbatta-cover.png",
+    ),
+
+    new Item(
+      "Portfolio Gabriela",
+      "Single Page Application",
+      "assets/img/portfolio/gabi-portfolio.jpg",
+      "category-lp",
+      "Gabriela Szajda",
+      "http://gabrielaszajda.pl",
+      "2018.01.05",
+      "Portfolio created for Gabriela Szajda",
+      ["HTML5", "CSS3", "Javascript", "Vue.js", "SASS", "Gulp", "Webpack"],
+      "assets/img/portfolio/gabi-portfolio-cover.png"
     ),
 
     new Item(
