@@ -52,6 +52,9 @@
   opacity: 0.68;
   text-align: center;
 
+  outline: none ;
+
+
   border: 1px solid rgb(245, 245, 245);
   border-bottom: none;
   padding: 15px 0;
@@ -62,6 +65,12 @@
     background: lighten($mainColor, 40%);
     opacity: 1;
   }
+}
+
+.section-list__item.active {
+  cursor: pointer;
+  background: lighten($mainColor, 40%);
+  opacity: 1; 
 }
 
 .section-list__item--text {
