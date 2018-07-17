@@ -17,6 +17,19 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
 
   projects: Item[] = [
     new Item(
+      "Zwyczajny.pl",
+      "Mobile Application",
+      "assets/img/portfolio/zwyczajny.png",
+      "category-mobile",
+      "Zwyczajny.pl",
+      "http://zwyczajny.pl",
+      "2018.06.01",
+      "A social mobile application for arranging joint meals, where I was front-end developer. I was responsible for creating new features and asynchronous optimization.",
+      ["HTML5", "CSS3", "Javascript", "SASS", "Php", "MySql", "Wordpress"],
+      "assets/img/portfolio/zwyczajny-cover.png"
+    ),
+
+    new Item(
       "Portfolio Gabriela",
       "Single Page Application",
       "assets/img/portfolio/gabi-portfolio.jpg",
@@ -30,29 +43,16 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
     ),
 
     new Item(
-      "UKKONE OY",
-      "Landing Page",
-      "assets/img/portfolio/ukkone.png",
+      "Ciabbatta",
+      "Wordpress Site",
+      "assets/img/portfolio/ciabbatta.png",
       "category-lp",
-      "UKKONE OY",
-      "http://ukkone.fi",
-      "2017.04.15",
-      "Landing Page created for UKKONE OY",
-      ["HTML5", "CSS3", "Javascript"],
-      "assets/img/portfolio/ukkone-cover.png"
-    ),
-
-    new Item(
-      "Vintage Care",
-      "Landing Page",
-      "assets/img/portfolio/vintage.png",
-      "category-lp",
-      "Vintage Care",
-      "http://vintagecare.pl",
-      "2017.05.15",
-      "Landing page created for Vintage Care",
-      ["HTML5", "CSS3", "Javascript", "SASS", "Gulp"],
-      "assets/img/portfolio/vintage-cover.png"
+      "Ciabbatta",
+      "http://www.ciabbatta.pl",
+      "2017.10.10",
+      "Wordpress page, based on a template, created for Ciabbatta Catering",
+      ["HTML5", "CSS3", "Javascript", "Php", "Wordpress", "MySQL"],
+      "assets/img/portfolio/ciabbatta-cover.png",
     ),
 
     new Item(
@@ -82,33 +82,6 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
     ),
 
     new Item(
-      "Ciabbatta",
-      "Wordpress Site",
-      "assets/img/portfolio/ciabbatta.png",
-      "category-lp",
-      "Ciabbatta",
-      "http://www.ciabbatta.pl",
-      "2017.10.10",
-      "Wordpress page, based on template, created for Ciabbatta Catering",
-      ["HTML5", "CSS3", "Javascript", "Php"],
-      "assets/img/portfolio/ciabbatta-cover.png",
-    ),
-
-    new Item(
-      "Simon Game",
-      "Javascript",
-      "assets/img/portfolio/simon.png",
-      "category-js",
-      "Freecodecamp",
-      "http://kamil.webheroes.io/Projekty/Simon/",
-      "2017.10.06",
-      "Simon Game. You are presented with a random series of button presses. Each time you input a series of button presses correctly, You see the same series of button presses but with an additional step. Reach 20 steps in order to win. It is Freecodecamp project",
-      ["HTML5", "CSS3", "SASS", "Javascript", "Gulp", "Webpack"],
-      "assets/img/portfolio/simon-cover.png"
-
-    ),
-
-    new Item(
       "Tic-Tac-Toe",
       "Javascript",
       "assets/img/portfolio/tic-tac-toe.png",
@@ -121,7 +94,6 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
       "assets/img/portfolio/tic-tac-toe-cover.png",
 
     ),
-
 
     new Item(
       "Neighborhood Map",
@@ -148,6 +120,46 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
       "My first javascript app. It is simple arcade game made for Udacity Nanodegree Project.",
       ["HTML5", "CSS3", "Canvas", "Javascript"],
       "assets/img/portfolio/arcade-cover.png"
+
+    ),
+
+    new Item(
+      "Vintage Care",
+      "Landing Page",
+      "assets/img/portfolio/vintage.png",
+      "category-lp",
+      "Vintage Care",
+      "http://vintagecare.pl",
+      "2017.05.15",
+      "Simple landing page created for Vintage Care",
+      ["HTML5", "CSS3", "Javascript", "SASS", "Gulp"],
+      "assets/img/portfolio/vintage-cover.png"
+    ),
+
+    new Item(
+      "UKKONE OY",
+      "Landing Page",
+      "assets/img/portfolio/ukkone.png",
+      "category-lp",
+      "UKKONE OY",
+      "http://ukkone.fi",
+      "2017.04.15",
+      "Landing Page created for UKKONE OY",
+      ["HTML5", "CSS3", "Javascript"],
+      "assets/img/portfolio/ukkone-cover.png"
+    ),
+
+    new Item(
+      "Simon Game",
+      "Javascript",
+      "assets/img/portfolio/simon.png",
+      "category-js",
+      "Freecodecamp",
+      "http://kamil.webheroes.io/Projekty/Simon/",
+      "2017.10.06",
+      "Simon Game. You are presented with a random series of button presses. Each time you input a series of button presses correctly, You see the same series of button presses but with an additional step. Reach 20 steps in order to win. It is Freecodecamp project",
+      ["HTML5", "CSS3", "SASS", "Javascript", "Gulp", "Webpack"],
+      "assets/img/portfolio/simon-cover.png"
 
     ),
 
@@ -236,6 +248,11 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
     this.grid.filter('.category-lp');
     this.grid.filter('.category-js');
 
+  }
+
+
+  filterMobile(){
+    this.grid.filter('.category-mobile');
   }
 
   filterAng(){
