@@ -30,6 +30,19 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
     ),
 
     new Item(
+      "Ryzowa Park",
+      "Javascript Application",
+      "assets/img/portfolio/ryzowa.png",
+      "category-js",
+      "Ryzowa Park",
+      "http://ryzowapark.pl",
+      "2018.12.15",
+      "I was responsible for creating apartment viewer for Ryzowa Park site.",
+      ["HTML5", "CSS3", "Javascript", "ES6", "jQuery", "ImageMapster"],
+      "assets/img/portfolio/ryzowa-cover.png"
+    ),
+
+    new Item(
       "Portfolio Gabriela",
       "Single Page Application",
       "assets/img/portfolio/gabi-portfolio.jpg",
