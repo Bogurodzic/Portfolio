@@ -11,15 +11,16 @@ export class PortfolioDetailsComponent implements OnInit, AfterViewInit {
   @Output() right = new EventEmitter();
 
   @Input() detail = {
-    projectName: String,
-    projectType: String,
-    projectImage: String,
-    projectCategory: String,
-    client: String,
-    siteUrl: String,
-    date: String,
-    projectDescription: String,
-    cover: String
+     projectName: String,
+     projectType: String,
+     projectImage: String,
+     category: String,
+     client: String,
+     siteUrl: String,
+     date: String,
+     projectDescription: String,
+     technologies: Array,
+     cover: String
  };
 
  @Input() isFirst: boolean;

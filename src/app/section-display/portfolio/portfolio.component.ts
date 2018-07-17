@@ -24,7 +24,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
       "Zwyczajny.pl",
       "http://zwyczajny.pl",
       "2018.06.01",
-      "A social mobile application for arranging joint meals, where I was front-end developer. I was responsible for creating new features and asynchronous optimization.",
+      "A social mobile application for arranging joint meals, where my responsibility As a front-end developer was to create new features, improving performance and asynch optimizations.",
       ["HTML5", "CSS3", "Javascript", "SASS", "Php", "MySql", "Wordpress"],
       "assets/img/portfolio/zwyczajny-cover.png"
     ),
@@ -37,7 +37,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
       "Ryzowa Park",
       "http://ryzowapark.pl",
       "2018.12.15",
-      "I was responsible for creating apartment viewer for Ryzowa Park site.",
+      "My responsibility was to create the aparment viewer app for existing Ryzowa Park site.",
       ["HTML5", "CSS3", "Javascript", "ES6", "jQuery", "ImageMapster"],
       "assets/img/portfolio/ryzowa-cover.png"
     ),
@@ -129,7 +129,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
       "Udacity",
       "http://kamil.webheroes.io/Projekty/Map",
       "2016.11.02",
-      "Another Udacity Nanodegree Project. On the site you will fin filtered search engine of popular Warsaw locations. Access info about marks by clicking them from the list or from the map. Mark's info provided by wikipedia(en).",
+      "Another Udacity Nanodegree Project. On the site you will find filtered search engine of popular Warsaw locations. Access info about marks by clicking them from the list or from the map. Mark's info provided by wikipedia(en).",
       ["HTML5", "CSS3", "SASS", "Javascript", "Gulp", "Webpack", "Ajax", "Wikipedia API", "Google API"],
       "assets/img/portfolio/map-cover.png"
 
