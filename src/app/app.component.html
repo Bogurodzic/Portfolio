@@ -1,3 +1,4 @@
+<base href="/">
 <div class="container-fluid">
   <div class="row">
     <div class="col-12 menu">
@@ -8,7 +9,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-2" id="menu">
-            <app-menu (onChosedSection)="changeSection($event)"></app-menu>
+            <app-menu ></app-menu>
           </div>
           <div class="col-md-10">
             <app-section-display [chosedSection]="section"></app-section-display>

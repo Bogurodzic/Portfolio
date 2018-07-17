@@ -1,11 +1,12 @@
 <div class="display-wrapper">
   <div class="display" [ngClass]="{'transparent': chosedSection === 'home'}">
     <div class="corner-border"></div>
-    <app-home [ngStyle]="{'display': chosedSection === 'home' ? 'block' : 'none'}" [ngClass]="{'showFromLeft': chosedSection === 'home'}"></app-home>
+    <!-- <app-home [ngStyle]="{'display': chosedSection === 'home' ? 'block' : 'none'}" [ngClass]="{'showFromLeft': chosedSection === 'home'}"></app-home>
     <app-about-me [ngStyle]="{'display': chosedSection === 'aboutMe' ? 'block' : 'none'}"></app-about-me>
     <app-resume [ngStyle]="{'display': chosedSection === 'resume' ? 'block' : 'none'}"></app-resume>
     <app-portfolio [ngStyle]="{'display': chosedSection === 'portfolio' ? 'block' : 'none'}"></app-portfolio>
     <app-blog [ngStyle]="{'display': chosedSection === 'blog' ? 'block' : 'none'}"></app-blog>
-    <app-contact [ngStyle]="{'display': chosedSection === 'contact' ? 'block' : 'none'}"></app-contact>
+    <app-contact [ngStyle]="{'display': chosedSection === 'contact' ? 'block' : 'none'}"></app-contact> -->
+    <router-outlet></router-outlet>
   </div>
 </div>
