@@ -78,9 +78,14 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
   }
 
   filterLp(){
-    this.grid.filter('.category-js');
+    // this.grid.filter('.category-js');
 
-    this.grid.filter('.category-lp');
+    // this.grid.filter('.category-lp');
+
+    this.grid.getItems().filter(function (item) {
+      console.log(item);
+      return item.isActive();
+    });
 
   }
 

@@ -17,8 +17,8 @@ export const projects: IItem[] = [
     {
         projectName: "Ryzowa Park",
         projectType: "Javascript Application",
-        projectImages: ["assets/img/portfolio/ryzowa.png"],
-        categories: ["category-js"],
+        projectImages: ["assets/img/portfolio/ryzowa.png"],  
+        categories: ["category-js", "category-mobile"],
         client: "Ryzowa Park",
         siteUrl: "http://ryzowapark.pl",
         date: "2018.12.15",
