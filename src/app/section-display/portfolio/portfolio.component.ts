@@ -1,12 +1,8 @@
 import { Component, OnInit, AfterViewInit, AfterViewChecked, AfterContentInit, AfterContentChecked } from '@angular/core';
 import * as velocity from 'velocity-animate/velocity';
 import Muuri from 'muuri/muuri';
-
 import { Project } from "../../shared/classes/project.class";
 import { projects } from '../../shared/data/projects.data';
-
-import { ProjectCategory } from '../../shared/classes/project-category.class';
-import { projectCategories } from '../../shared/data/project-category.data';
 
 @Component({ 
   selector: 'app-portfolio',
@@ -16,7 +12,6 @@ import { projectCategories } from '../../shared/data/project-category.data';
 export class PortfolioComponent implements OnInit {
   private grid: Muuri;
 
-  public categories: ProjectCategory[] = [];
   public projects: Project[] = [];
   public chosedPortfolio: Project;
   public chosedPortfolioFirst: boolean = true;
@@ -29,7 +24,6 @@ export class PortfolioComponent implements OnInit {
   ngOnInit() {
     this.loadProjects();
     this.loadInitialProjectToShow();
-    this.loadCategories();
 
     setTimeout(() => {
       this.grid = new Muuri('.grid');
@@ -43,10 +37,6 @@ export class PortfolioComponent implements OnInit {
 
   private loadInitialProjectToShow(): void {
     this.chosedPortfolio = this.projects[0];
-  }
-
-  private loadCategories(): void {
-    this.categories = projectCategories.map((category) => new ProjectCategory(category.categoryName, category.categoryFilterClass, category.active));
   }
 
   showProject(projectDetails, index){
@@ -85,15 +75,9 @@ export class PortfolioComponent implements OnInit {
     this.chosedPortfolio = this.projects[this.chosedPortfolioIndex];
   }
 
-  public onCategoryClick(category: ProjectCategory): void {
-    this.categories.map((category) => category.setActive(false));
-    category.setActive(true);
-    this.filter(category.categoryFilterClass);
-  }
 
   public filter(category: string): void {
     const categoryHtmlClass = "." + category;
-    console.log(categoryHtmlClass);
     this.grid.filter(categoryHtmlClass);
   }
 

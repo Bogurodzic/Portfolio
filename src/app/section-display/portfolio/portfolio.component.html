@@ -6,13 +6,9 @@
     <p class="headline-skills">My Work</p> 
   </div>  
   
-  <div class="portfolio-categories">
-    <ul class="portfolio-categories-list">
-      <li *ngFor="let category of categories;" class="portfolio-categories-list__item" [ngClass]="{'portfolio-categories-list__item--highlited': category.active}" (click)="onCategoryClick(category)">{{category.categoryName}}</li>
-    </ul>
-  </div>
+  <app-portfolio-categories (filter)="filter($event)"></app-portfolio-categories>
 
-  <div class="grid row">
+  <div class="grid row">   
 
     <ng-container  *ngFor="let project of projects; let i = index">
       <div class="item {{project.getClassName()}}" (click)="showProject(project, i)">

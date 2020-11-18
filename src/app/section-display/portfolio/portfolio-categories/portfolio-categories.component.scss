@@ -1,0 +1,43 @@
+@import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/breakpoints";
+
+
+.portfolio-categories {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .portfolio-categories-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .portfolio-categories-list__item {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+  
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+  
+    color: lighten(black, 60%);
+  
+    @include small {
+      font-size: 10px;
+      padding: 2.5px 5px;
+      margin-bottom: 15px;
+    };
+  
+    &:hover {
+      cursor: pointer;
+      background: lighten($mainColor, 30%);
+      color: lighten(black, 40%);
+    }
+  }
+  
+  .portfolio-categories-list__item--highlited {
+    background: $mainColor;
+    color: white;
+  }
+  

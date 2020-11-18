@@ -15,6 +15,7 @@ import { BlogItemComponent } from './section-display/blog/blog-item/blog-item.co
 import { ContactComponent } from './section-display/contact/contact.component';
 
 import { appRoutes } from './routes';
+import { PortfolioCategoriesComponent } from './section-display/portfolio/portfolio-categories/portfolio-categories.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { appRoutes } from './routes';
     PortfolioDetailsComponent,
     BlogComponent,
     BlogItemComponent,
-    ContactComponent
+    ContactComponent,
+    PortfolioCategoriesComponent
   ],
   imports: [
     BrowserModule,
