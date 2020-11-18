@@ -1,4 +1,4 @@
-import { IProject } from "./project.interface";
+import { IProject } from "../interfaces/project.interface";
 
 export class Project implements IProject {
 

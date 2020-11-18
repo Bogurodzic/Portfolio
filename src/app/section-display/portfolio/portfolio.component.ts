@@ -1,8 +1,9 @@
 import { Component, OnInit, AfterViewInit, AfterViewChecked, AfterContentInit, AfterContentChecked } from '@angular/core';
-import { Project } from "./project/project.class";
 import * as velocity from 'velocity-animate/velocity';
 import Muuri from 'muuri/muuri';
-import { projects } from './portfolio-projects/projects';
+
+import { Project } from "../../shared/classes/project.class";
+import { projects } from '../../shared/data/projects.data';
 
 import { ProjectCategory } from '../../shared/classes/project-category.class';
 import { projectCategories } from '../../shared/data/project-category.data';
@@ -17,7 +18,7 @@ export class PortfolioComponent implements OnInit {
 
   public categories: ProjectCategory[] = [];
   public projects: Project[] = [];
-  public chosedPortfolio: Project = this.projects[0];
+  public chosedPortfolio: Project;
   public chosedPortfolioFirst: boolean = true;
   public chosedPortfolioLast: boolean = false;
   public chosedPortfolioIndex: number = 0;
@@ -27,6 +28,7 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit() {
     this.loadProjects();
+    this.loadInitialProjectToShow();
     this.loadCategories();
 
     setTimeout(() => {
@@ -37,6 +39,10 @@ export class PortfolioComponent implements OnInit {
 
   private loadProjects(): void {
     this.projects = projects.map((project) => new Project(project.projectName, project.projectType, project.projectImages, project.categories, project.client, project.siteUrl, project.date, project.projectDescription, project.technologies, project.cover));
+  }
+
+  private loadInitialProjectToShow(): void {
+    this.chosedPortfolio = this.projects[0];
   }
 
   private loadCategories(): void {
