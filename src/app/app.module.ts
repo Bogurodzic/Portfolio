@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -14,14 +14,7 @@ import { BlogComponent } from './section-display/blog/blog.component';
 import { BlogItemComponent } from './section-display/blog/blog-item/blog-item.component';
 import { ContactComponent } from './section-display/contact/contact.component';
 
-const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about', component: AboutMeComponent },
-  { path: 'resume', component: ResumeComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'blog', component: BlogComponent },
-  { path: 'contact', component: ContactComponent }
-]
+import { appRoutes } from './routes';
 
 @NgModule({
   declarations: [
