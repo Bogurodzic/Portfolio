@@ -4,67 +4,47 @@ import * as velocity from 'velocity-animate/velocity';
 import Muuri from 'muuri/muuri';
 import { projects } from './portfolio-projects/projects';
 
-
+import { ProjectCategory } from '../../shared/classes/project-category.class';
+import { projectCategories } from '../../shared/data/project-category.data';
 
 @Component({ 
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss']
 })
-export class PortfolioComponent implements OnInit, AfterViewChecked {
-  grid;
-  isDetailsHidden = true;
-  gridInit = 0;
+export class PortfolioComponent implements OnInit {
+  private grid: Muuri;
 
-  projects: Project[] = projects.map((project) => new Project(project.projectName, project.projectType, project.projectImages, project.categories, project.client, project.siteUrl, project.date, project.projectDescription, project.technologies, project.cover));
-
-  chosedPortfolio = this.projects[0];
-  chosedPortfolioFirst = true;
-  chosedPortfolioLast = false;
-  chosedPortfolioIndex = 0;
+  public categories: ProjectCategory[] = [];
+  public projects: Project[] = [];
+  public chosedPortfolio: Project = this.projects[0];
+  public chosedPortfolioFirst: boolean = true;
+  public chosedPortfolioLast: boolean = false;
+  public chosedPortfolioIndex: number = 0;
+  public areDetailsHidden: boolean = true;
 
   constructor() { }
 
   ngOnInit() {
+    this.loadProjects();
+    this.loadCategories();
 
-  }
-
-  ngAfterViewChecked(){
-    if (this.gridInit < 5){
-      this.gridInit++;
+    setTimeout(() => {
       this.grid = new Muuri('.grid');
-      this.addEventsForCategories();
-    }
+    }); 
+
   }
 
-  addEventsForCategories(){
-    let categories = document.querySelectorAll(".portfolio-categories-list__item");
-
-    [].forEach.call(categories, category => {
-
-      category.addEventListener("click", () => {
-        removeClassFromAll();
-        addClass(category);
-      });
-
-      function removeClassFromAll(){
-        [].forEach.call(categories, category => {
-          category.classList.remove("portfolio-categories-list__item--highlited");
-        })
-      }
-
-      function addClass(category){
-        category.classList.add("portfolio-categories-list__item--highlited");
-      }
-
-    });
+  private loadProjects(): void {
+    this.projects = projects.map((project) => new Project(project.projectName, project.projectType, project.projectImages, project.categories, project.client, project.siteUrl, project.date, project.projectDescription, project.technologies, project.cover));
   }
 
-
-
+  private loadCategories(): void {
+    this.categories = projectCategories.map((category) => new ProjectCategory(category.categoryName, category.categoryFilterClass, category.active));
+  }
 
   showProject(projectDetails, index){
-    this.isDetailsHidden = false;
+    this.areDetailsHidden = false;
     this.chosedPortfolio = projectDetails;
     this.chosedPortfolioIndex = index;
     this.checkIndexes(index);
@@ -84,7 +64,7 @@ export class PortfolioComponent implements OnInit, AfterViewChecked {
   }
 
   onExit(){
-    this.isDetailsHidden = true;
+    this.areDetailsHidden = true;
   }
 
   onLeft(){
@@ -99,10 +79,10 @@ export class PortfolioComponent implements OnInit, AfterViewChecked {
     this.chosedPortfolio = this.projects[this.chosedPortfolioIndex];
   }
 
-  public resetFilters(): void {
-    this.grid.filter(function (item) {
-      return item;
-    });
+  public onCategoryClick(category: ProjectCategory): void {
+    this.categories.map((category) => category.setActive(false));
+    category.setActive(true);
+    this.filter(category.categoryFilterClass);
   }
 
   public filter(category: string): void {
