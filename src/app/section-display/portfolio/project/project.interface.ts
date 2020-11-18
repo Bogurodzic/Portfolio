@@ -1,4 +1,4 @@
-export interface IItem {
+export interface IProject {
     projectName: string,
     projectType: string,
     projectImages: string[],

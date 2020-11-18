@@ -1,6 +1,6 @@
-import { IItem } from "./item.interface";
+import { IProject } from "./project.interface";
 
-export class Item implements IItem {
+export class Project implements IProject {
 
     constructor(
       public projectName: string,

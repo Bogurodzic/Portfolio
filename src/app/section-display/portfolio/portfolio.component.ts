@@ -1,12 +1,12 @@
 import { Component, OnInit, AfterViewInit, AfterViewChecked, AfterContentInit, AfterContentChecked } from '@angular/core';
-import { Item } from "./item/item";
+import { Project } from "./project/project.class";
 import * as velocity from 'velocity-animate/velocity';
 import Muuri from 'muuri/muuri';
 import { projects } from './portfolio-projects/projects';
 
 
 
-@Component({
+@Component({ 
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss']
@@ -16,7 +16,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
   isDetailsHidden = true;
   gridInit = 0;
 
-  projects: Item[] = projects.map((project) => new Item(project.projectName, project.projectType, project.projectImages, project.categories, project.client, project.siteUrl, project.date, project.projectDescription, project.technologies, project.cover));
+  projects: Project[] = projects.map((project) => new Project(project.projectName, project.projectType, project.projectImages, project.categories, project.client, project.siteUrl, project.date, project.projectDescription, project.technologies, project.cover));
 
   chosedPortfolio = this.projects[0];
   chosedPortfolioFirst = true;

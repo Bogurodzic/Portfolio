@@ -1,6 +1,6 @@
-import { IItem } from "../item/item.interface";
+import { IProject } from "../project/project.interface";
 
-export const projects: IItem[] = [
+export const projects: IProject[] = [
     {
         projectName: "Zwyczajny.pl",
         projectType: "Mobile Application",
