@@ -11,7 +11,7 @@ import { projects } from './portfolio-projects/projects';
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss']
 })
-export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewChecked, AfterContentChecked {
+export class PortfolioComponent implements OnInit, AfterViewChecked {
   grid;
   isDetailsHidden = true;
   gridInit = 0;
@@ -30,23 +30,11 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
   }
 
   ngAfterViewChecked(){
-    if(this.gridInit < 5){
+    if (this.gridInit < 5){
       this.gridInit++;
       this.grid = new Muuri('.grid');
       this.addEventsForCategories();
     }
-  }
-
-  ngAfterContentInit() {
-
-  }
-
-  ngAfterContentChecked() {
-
-  }
-
-  ngAfterViewInit() {
-
   }
 
   addEventsForCategories(){
@@ -72,40 +60,8 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
     });
   }
 
-  filterAll(){
-    this.grid.filter('.category-lp, .category-js, .category-ang');
-
-  }
-
-  filterLp(){
-    // this.grid.filter('.category-js');
-
-    // this.grid.filter('.category-lp');
-
-    this.grid.getItems().filter(function (item) {
-      console.log(item);
-      return item.isActive();
-    });
-
-  }
-
-  filterJs(){
-    this.grid.filter('.category-lp');
-    this.grid.filter('.category-js');
-
-  }
 
 
-  filterMobile(){
-    this.grid.filter('.category-mobile');
-  }
-
-  filterAng(){
-    this.grid.filter('.category-lp');
-
-    this.grid.filter('.category-ang');
-
-  }
 
   showProject(projectDetails, index){
     this.isDetailsHidden = false;
@@ -141,6 +97,18 @@ export class PortfolioComponent implements OnInit, AfterViewInit, AfterViewCheck
     this.chosedPortfolioIndex++;
     this.checkIndexes(this.chosedPortfolioIndex);
     this.chosedPortfolio = this.projects[this.chosedPortfolioIndex];
+  }
+
+  public resetFilters(): void {
+    this.grid.filter(function (item) {
+      return item;
+    });
+  }
+
+  public filter(category: string): void {
+    const categoryHtmlClass = "." + category;
+    console.log(categoryHtmlClass);
+    this.grid.filter(categoryHtmlClass);
   }
 
 }

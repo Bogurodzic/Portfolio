@@ -1,17 +1,16 @@
 <div class="portfolio-wrapper">
   <app-portfolio-details [hidden]="isDetailsHidden" (exit)="onExit()" (left)="onLeft()" (right)="onRight()" [detail]="chosedPortfolio" [isFirst]="chosedPortfolioFirst" [isLast]="chosedPortfolioLast"></app-portfolio-details>
-
+ 
   <div class="headline">
     <h4 class="headline-intro">Portfolio</h4>
-    <p class="headline-skills">My Work</p>
-  </div>
+    <p class="headline-skills">My Work</p> 
+  </div>  
   <div class="portfolio-categories">
     <ul class="portfolio-categories-list">
-      <li class="portfolio-categories-list__item portfolio-categories-list__item--highlited"  (click)="filterAll()">All</li>
-      <li class="portfolio-categories-list__item" (click)="filterMobile()">Mobile Apps</li>
-      <li class="portfolio-categories-list__item" (click)="filterLp()">Sites</li>
-      <li class="portfolio-categories-list__item" (click)="filterJs()">Javascript Apps</li>
-      <li class="portfolio-categories-list__item" (click)="filterAng()">Angular/React/Vue</li>
+      <li class="portfolio-categories-list__item portfolio-categories-list__item--highlited"  (click)="resetFilters()">All</li>
+      <li class="portfolio-categories-list__item" (click)="filter('category-mobile')">Mobile Apps</li>
+      <li class="portfolio-categories-list__item" (click)="filter('category-site')">Sites</li>
+      <li class="portfolio-categories-list__item" (click)="filter('category-arcade')">Arcade</li>
     </ul>
   </div>
 
@@ -21,7 +20,6 @@
       <div class="item {{project.getClassName()}}" (click)="showProject(project, i)">
         <div class="item-content">
           <img class="item-content__img" src="{{project.cover}}" alt="">
-          <!-- <div class="item-content__img" [ngStyle]="{'background': '#fff url(' + project.projectImage + ') '}"></div> -->
           <div class="item-content-overlay">
             <h5 class="item-content-overlay__name">{{project.projectName}}</h5>
             <div class="item-content-overlay-menu">
