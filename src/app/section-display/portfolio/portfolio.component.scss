@@ -19,46 +19,6 @@
   };
 }
 
-.headline {
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.headline-intro {
-  color: rgb(238, 238, 238);
-  font-size: 60px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  margin-bottom: 0px;
-
-  @include large {
-    font-size: 40px;
-  };
-}
-
-.headline-skills {
-  background: $mainColor;
-  padding: 2px 5px;
-  margin-left: 100px;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  display: inline-block;
-
-  @include large {
-    padding: 1px 3px;
-    font-size: 12px;
-  };
-
-  @include small {
-    padding: 1px;
-    font-size: 10px;
-  };
-}
-
-
-
-
-
 
 ////////GRID SCSS///////
 

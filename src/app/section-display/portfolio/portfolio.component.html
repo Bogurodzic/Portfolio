@@ -1,11 +1,7 @@
 <div class="portfolio-wrapper">
   <app-portfolio-details [hidden]="areDetailsHidden" (exit)="onExit()" (left)="onLeft()" (right)="onRight()" [detail]="chosedPortfolio" [isFirst]="chosedPortfolioFirst" [isLast]="chosedPortfolioLast"></app-portfolio-details>
  
-  <div class="headline">
-    <h4 class="headline-intro">Portfolio</h4>
-    <p class="headline-skills">My Work</p> 
-  </div>  
-  
+  <app-headline [headline]="headline" [subHeadline]="subHeadline"></app-headline>
   <app-portfolio-categories (filter)="filter($event)"></app-portfolio-categories>
 
   <div class="grid row">   

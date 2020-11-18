@@ -12,6 +12,9 @@ import { projects } from '../../shared/data/projects.data';
 export class PortfolioComponent implements OnInit {
   private grid: Muuri;
 
+  public headline: string = "Portfolio";
+  public subHeadline: string = "My Work";
+  
   public projects: Project[] = [];
   public chosedPortfolio: Project;
   public chosedPortfolioFirst: boolean = true;

@@ -16,6 +16,7 @@ import { ContactComponent } from './section-display/contact/contact.component';
 
 import { appRoutes } from './routes';
 import { PortfolioCategoriesComponent } from './section-display/portfolio/portfolio-categories/portfolio-categories.component';
+import { HeadlineComponent } from './shared/components/headline/headline.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PortfolioCategoriesComponent } from './section-display/portfolio/portfo
     BlogComponent,
     BlogItemComponent,
     ContactComponent,
-    PortfolioCategoriesComponent
+    PortfolioCategoriesComponent,
+    HeadlineComponent
   ],
   imports: [
     BrowserModule,
