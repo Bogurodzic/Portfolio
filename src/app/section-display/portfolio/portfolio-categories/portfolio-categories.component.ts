@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ProjectCategory } from '../../../shared/classes/project-category.class';
 import { projectCategories } from '../../../shared/data/project-category.data';
+import { PortfolioCategoriesService } from './portfolio-categories.service';
 
 @Component({
   selector: 'app-portfolio-categories',
@@ -12,7 +13,7 @@ export class PortfolioCategoriesComponent implements OnInit {
 
   public categories: ProjectCategory[] = [];
   
-  constructor() { }
+  constructor(private portfolioCategoriesService: PortfolioCategoriesService) { }
 
   ngOnInit() {
     this.loadCategories();
@@ -24,8 +25,7 @@ export class PortfolioCategoriesComponent implements OnInit {
 
   public onCategoryClick(category: ProjectCategory): void {
     this.categories.map((category) => category.setActive(false));
-    category.setActive(true);
-    this.filter.emit(category.categoryFilterClass);
+    this.portfolioCategoriesService.changeActiveCategory(category);
   }
 
 }

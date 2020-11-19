@@ -17,7 +17,10 @@ import { ContactComponent } from './section-display/contact/contact.component';
 import { appRoutes } from './routes';
 import { PortfolioCategoriesComponent } from './section-display/portfolio/portfolio-categories/portfolio-categories.component';
 import { HeadlineComponent } from './shared/components/headline/headline.component';
+import { PortfolioProjectsComponent } from './section-display/portfolio/portfolio-projects/portfolio-projects.component';
 
+
+import { PortfolioCategoriesService } from './section-display/portfolio/portfolio-categories/portfolio-categories.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,14 +35,15 @@ import { HeadlineComponent } from './shared/components/headline/headline.compone
     BlogItemComponent,
     ContactComponent,
     PortfolioCategoriesComponent,
-    HeadlineComponent
+    HeadlineComponent,
+    PortfolioProjectsComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes,
     { enableTracing: true })
   ],
-  providers: [],
+  providers: [PortfolioCategoriesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
