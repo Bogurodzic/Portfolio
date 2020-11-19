@@ -41,7 +41,7 @@ import { PortfolioCategoriesService } from './section-display/portfolio/portfoli
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes,
-    { enableTracing: true })
+    { enableTracing: true, relativeLinkResolution: 'legacy' })
   ],
   providers: [PortfolioCategoriesService],
   bootstrap: [AppComponent]
