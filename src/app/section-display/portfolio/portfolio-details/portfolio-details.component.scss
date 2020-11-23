@@ -3,7 +3,7 @@
 
 
 .project-details {
-
+  position: relative;
 }
 
 .project-details-wrapper {
@@ -16,6 +16,8 @@
 }
 
 .menu {
+  position: absolute;
+  right: 0;
   display: flex;
   flex-direction: row-reverse;
   justify-content: right;
@@ -38,7 +40,7 @@
 
 .project-name {
   font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 700;
   text-align: center;
   padding: 25px 0;

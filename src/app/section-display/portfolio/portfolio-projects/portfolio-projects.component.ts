@@ -33,7 +33,7 @@ export class PortfolioProjectsComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.unsubscribe();
-  }
+  } 
 
 
   private initSubscriptions(): void {
@@ -62,9 +62,10 @@ export class PortfolioProjectsComponent implements OnInit, OnDestroy {
   }
 
   public openProject(project: Project): void {
+    const windowWidth = window.innerWidth;
     const dialogRef = this.dialog.open(PortfolioDetailsComponent, {
       width: '85%',
-      height: '85%',
+      height: windowWidth > 1920 ? '60%' : '52%',
       data: project
     });
 
