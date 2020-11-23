@@ -2,10 +2,12 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Project } from '../../../shared/classes/project.class';
 import { projects } from '../../../shared/data/projects.data';
 import { PortfolioCategoriesService } from '../portfolio-categories/portfolio-categories.service';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 import Muuri from 'muuri/muuri';
 import { Subscription } from 'rxjs/Subscription';
 import { ProjectCategory } from '../../../shared/classes/project-category.class';
+import { PortfolioDetailsComponent } from '../portfolio-details/portfolio-details.component';
 
 @Component({
   selector: 'app-portfolio-projects',
@@ -18,7 +20,7 @@ export class PortfolioProjectsComponent implements OnInit, OnDestroy {
 
   public projects: Project[] = [];
   
-  constructor(private portfolioCategoriesService: PortfolioCategoriesService) { }
+  constructor(private portfolioCategoriesService: PortfolioCategoriesService, public dialog: MatDialog) { }
 
   ngOnInit() {
     this.loadProjects();
@@ -57,6 +59,18 @@ export class PortfolioProjectsComponent implements OnInit, OnDestroy {
   private filter(category: string): void {
     const categoryHtmlClass = "." + category;
     this.grid.filter(categoryHtmlClass);
+  }
+
+  public openProject(project: Project): void {
+    const dialogRef = this.dialog.open(PortfolioDetailsComponent, {
+      width: '85%',
+      height: '85%',
+      data: project
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
   }
 
 }

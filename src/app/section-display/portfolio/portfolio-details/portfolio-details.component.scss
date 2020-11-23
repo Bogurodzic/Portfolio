@@ -3,6 +3,10 @@
 
 
 .project-details {
+
+}
+
+.project-details-wrapper {
   box-sizing: border-box;
   padding: 20px 60px;
 
@@ -13,11 +17,14 @@
 
 .menu {
   display: flex;
-  justify-content: center;
+  flex-direction: row-reverse;
+  justify-content: right;
 }
 
 .menu__item {
   padding: 5px 15px;
+  font-size: 30px;
+
 
   &:hover {
     cursor: pointer;

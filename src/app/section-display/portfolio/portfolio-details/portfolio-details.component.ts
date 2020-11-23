@@ -1,4 +1,6 @@
-import { Component, OnInit, Output, EventEmitter, Input, AfterViewInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input, AfterViewInit, Inject } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Project } from '../../../shared/classes/project.class';
 
 @Component({
   selector: 'app-portfolio-details',
@@ -6,44 +8,25 @@ import { Component, OnInit, Output, EventEmitter, Input, AfterViewInit } from '@
   styleUrls: ['./portfolio-details.component.scss']
 })
 export class PortfolioDetailsComponent implements OnInit, AfterViewInit {
-  @Output() exit = new EventEmitter();
-  @Output() left = new EventEmitter();
-  @Output() right = new EventEmitter();
+ public project: Project;
 
-  @Input() detail = {
-     projectName: String,
-     projectType: String,
-     projectImage: String,
-     category: String,
-     client: String,
-     siteUrl: String,
-     date: String,
-     projectDescription: String,
-     technologies: Array,
-     cover: String
- };
+ constructor(
+  public dialogRef: MatDialogRef<PortfolioDetailsComponent>,
+  @Inject(MAT_DIALOG_DATA) public data: Project) {}
 
- @Input() isFirst: boolean;
- @Input() isLast: boolean;
-
-  constructor() { }
-
+  
   ngOnInit() {
+    this.project = this.data;
+    console.log('portfolio open', this.project);
+
   }
 
   ngAfterViewInit(){
+
   }
 
-  onExit(){
-    this.exit.emit();
-  }
-
-  changeToLeftPortfolio(){
-    this.left.emit();
-  }
-
-  changeToRightPortfolio(){
-    this.right.emit();
+  public close(): void {
+    this.dialogRef.close();
   }
 
 
