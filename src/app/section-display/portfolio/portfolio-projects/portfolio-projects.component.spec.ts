@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { MenuComponent } from './menu.component';
+import { PortfolioProjectsComponent } from './portfolio-projects.component';
 
-describe('MenuComponent', () => {
-  let component: MenuComponent;
-  let fixture: ComponentFixture<MenuComponent>;
+describe('PortfolioProjectsComponent', () => {
+  let component: PortfolioProjectsComponent;
+  let fixture: ComponentFixture<PortfolioProjectsComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ MenuComponent ]
+      declarations: [ PortfolioProjectsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MenuComponent);
+    fixture = TestBed.createComponent(PortfolioProjectsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
