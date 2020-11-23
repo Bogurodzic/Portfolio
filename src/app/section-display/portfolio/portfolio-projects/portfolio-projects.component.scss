@@ -82,7 +82,7 @@
     box-sizing: border-box;
     padding: 15px;
   
-    background: rgba(244,244,244, 0.7);
+    background: rgba(244,244,244, 0.9);
 }
   
 .item-content-overlay__name {
@@ -90,7 +90,11 @@
 
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 24px;
+
+    @include large {
+      font-size: 20px;
+    }
 }
   
 .item-content-overlay-menu {
@@ -102,10 +106,19 @@
     margin: 0;
   
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
+
+    @include large {
+      font-size: 13px;
+    }
 }
   
 .item-content-overlay-menu__icon {
     color: $mainColor;
+    font-size: 16px;
+
+    @include large {
+      font-size: 13px;
+    }
 }

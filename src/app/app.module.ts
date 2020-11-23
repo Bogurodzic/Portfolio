@@ -25,6 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+
 
 @NgModule({
   declarations: [
@@ -48,7 +50,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     RouterModule.forRoot(appRoutes,
     { enableTracing: true, relativeLinkResolution: 'legacy' }),
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCarouselModule.forRoot()
   ],
   providers: [PortfolioCategoriesService],
   bootstrap: [AppComponent]   
