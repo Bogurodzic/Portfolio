@@ -61,16 +61,30 @@ export class PortfolioProjectsComponent implements OnInit, OnDestroy {
     this.grid.filter(categoryHtmlClass);
   }
 
-  public openProject(project: Project): void {
+  private getDialogHeight(): string {
     const windowWidth = window.innerWidth;
-    const dialogRef = this.dialog.open(PortfolioDetailsComponent, {
-      width: '95%',
-      height: windowWidth > 1920 ? '60%' : '52%',
-      data: project
-    });
+    let dialogHeight;
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
+    if (windowWidth > 1920) {
+      dialogHeight = '60%';
+    } else if (windowWidth > 1500) {
+      dialogHeight = '52%';
+    } else {
+      dialogHeight = '70%';
+    }
+
+    return dialogHeight;
+  }
+
+  private getDialogWidth(): string {
+    return '95%';
+  }
+
+  public openProject(project: Project): void {
+    const dialogRef = this.dialog.open(PortfolioDetailsComponent, {
+      width: this.getDialogWidth(),
+      height: this.getDialogHeight(),
+      data: project
     });
   }
 
