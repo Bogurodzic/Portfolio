@@ -8,12 +8,12 @@
     <h3 class="project-name">{{project.projectName}}</h3>
 
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-9">
         <mat-carousel
           timings="200ms ease-in"
           [autoplay]="true"
           interval="3000"
-          [proportion]="50"
+          [proportion]="40"
           color="white"
         >
           <mat-carousel-slide
@@ -26,7 +26,7 @@
         
         <!-- <img class="item-content__img" src="{{project.projectImages[0]}}" alt=""> -->
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="description">
           <h5 class="description__headline">Description</h5>
           <p class="description-name description-item"><i class="fa fa-file description-item__icon" aria-hidden="true"></i>{{project.projectType}}</p>

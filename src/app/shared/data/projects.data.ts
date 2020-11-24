@@ -2,6 +2,18 @@ import { IProject } from "../interfaces/project.interface";
 
 export const projects: IProject[] = [
     {
+        projectName: "Clik4Dom",
+        projectType: "Mobile Application",
+        projectImages: ["assets/img/portfolio/gallery/clik4dom-1.png"],
+        categories: ["category-all", "category-mobile"],
+        client: "Cravttproperty",
+        siteUrl: "https://apps.apple.com/us/app/clik4dom/id1512735374?ign-mpt=uo%3D2",
+        date: "2020.11.31",
+        projectDescription: "A social mobile application for arranging joint meals, where my responsibility As a front-end developer was to create new features, improving performance and asynch optimizations.",
+        technologies: ["Node.js", "express.js", "mongoDB", "Ionic", "Angular", "Typescript", "Javascript", "ES6", "HTML5", "CSS3",  "SASS", "Android Studio", "xCode", "apidocjs"],
+        cover: "assets/img/portfolio/cover/zwyczajny-cover.png"
+    },
+    {
         projectName: "Zwyczajny.pl",
         projectType: "Mobile Application",
         projectImages: ["assets/img/portfolio/gallery/zwyczajny-1.png","assets/img/portfolio/gallery/zwyczajny-2.png"],

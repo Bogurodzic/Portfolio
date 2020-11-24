@@ -28,7 +28,7 @@ export class PortfolioProjectsComponent implements OnInit, OnDestroy {
 
     setTimeout(() => {
       this.initializeGrid();
-    }); 
+    }, 250); 
   }
 
   ngOnDestroy(): void {
@@ -64,7 +64,7 @@ export class PortfolioProjectsComponent implements OnInit, OnDestroy {
   public openProject(project: Project): void {
     const windowWidth = window.innerWidth;
     const dialogRef = this.dialog.open(PortfolioDetailsComponent, {
-      width: '85%',
+      width: '95%',
       height: windowWidth > 1920 ? '60%' : '52%',
       data: project
     });
