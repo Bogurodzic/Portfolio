@@ -184,6 +184,11 @@
   };
 }
 
+.services-container {
+  display: flex;
+  align-items: center;
+}
+
 .service-item {
 
 }
@@ -254,3 +259,39 @@
 .skill-angular {
   //font-size: 65px;
 }
+
+.puppy {
+  height: 100%;
+  background: red;
+  @include medium {
+    display: none;
+  }
+}
+
+.puppy-text {
+  width: 90%;
+  text-align: right;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.puppy-photo {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.background {
+  width: 100%;
+  background: url("/assets/img/psiaki.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include extralarge {
+    display: none;
+  }
+}
+
