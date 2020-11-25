@@ -21,6 +21,7 @@ import { PortfolioProjectsComponent } from './section-display/portfolio/portfoli
 
 
 import { PortfolioCategoriesService } from './section-display/portfolio/portfolio-categories/portfolio-categories.service';
+import { ResumeEducationComponent } from './section-display/resume/resume-education/resume-education.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { PortfolioCategoriesService } from './section-display/portfolio/portfoli
     ContactComponent,
     PortfolioCategoriesComponent,
     HeadlineComponent,
-    PortfolioProjectsComponent
+    PortfolioProjectsComponent,
+    ResumeEducationComponent
   ],
   imports: [
     BrowserModule,

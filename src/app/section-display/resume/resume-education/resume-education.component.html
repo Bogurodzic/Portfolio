@@ -1,0 +1,12 @@
+<div class="history education-history">
+    <div class="history-item" *ngFor="let educationItem of education;">
+      <div class="history-item" >
+        <p class="history-item__year">{{educationItem.getFullDate()}}</p>
+        <div class="history-item-wrapper" >
+          <p class="history-item__headline">{{educationItem.category}}</p>
+          <p class="history-item__short">~{{educationItem.place}}</p>
+          <p class="history-item__description">{{educationItem.description}}</p>
+        </div>
+      </div>
+    </div>
+</div>
