@@ -1,6 +1,6 @@
 <div class="grid row">   
   <ng-container  *ngFor="let project of projects; let i = index">
-    <div class="item {{project.getClassName()}}" (click)="showProject(project, i)">
+    <div class="item {{project.getClassName()}}" (click)="openProject(project)">
       <div class="item-content">
         <img class="item-content__img" src="{{project.cover}}" alt="">
         <div class="item-content-overlay">

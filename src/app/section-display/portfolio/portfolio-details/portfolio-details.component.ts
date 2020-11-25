@@ -1,4 +1,7 @@
-import { Component, OnInit, Output, EventEmitter, Input, AfterViewInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input, AfterViewInit, Inject } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Project } from '../../../shared/classes/project.class';
+import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
 
 @Component({
   selector: 'app-portfolio-details',
@@ -6,44 +9,35 @@ import { Component, OnInit, Output, EventEmitter, Input, AfterViewInit } from '@
   styleUrls: ['./portfolio-details.component.scss']
 })
 export class PortfolioDetailsComponent implements OnInit, AfterViewInit {
-  @Output() exit = new EventEmitter();
-  @Output() left = new EventEmitter();
-  @Output() right = new EventEmitter();
+ public project: Project;
+ public slides = [];
+ constructor(
+  public dialogRef: MatDialogRef<PortfolioDetailsComponent>,
+  @Inject(MAT_DIALOG_DATA) public data: Project) {}
 
-  @Input() detail = {
-     projectName: String,
-     projectType: String,
-     projectImage: String,
-     category: String,
-     client: String,
-     siteUrl: String,
-     date: String,
-     projectDescription: String,
-     technologies: Array,
-     cover: String
- };
-
- @Input() isFirst: boolean;
- @Input() isLast: boolean;
-
-  constructor() { }
-
+  
   ngOnInit() {
+    this.project = this.data;
+    this.prepareSildes();
+    console.log('portfolio open', this.project, this.slides);
+
   }
 
   ngAfterViewInit(){
+
   }
 
-  onExit(){
-    this.exit.emit();
+  private prepareSildes(): void {
+    this.slides = this.project.projectImages.map((projectImage) => {
+      return {image: projectImage}
+    });
   }
 
-  changeToLeftPortfolio(){
-    this.left.emit();
-  }
+  //slides = [{'image': 'https://gsr.dev/material2-carousel/assets/demo.png'}, {'image': 'https://gsr.dev/material2-carousel/assets/demo.png'},{'image': 'https://gsr.dev/material2-carousel/assets/demo.png'}, {'image': 'https://gsr.dev/material2-carousel/assets/demo.png'}, {'image': 'https://gsr.dev/material2-carousel/assets/demo.png'}];
 
-  changeToRightPortfolio(){
-    this.right.emit();
+
+  public close(): void {
+    this.dialogRef.close();
   }
 
 

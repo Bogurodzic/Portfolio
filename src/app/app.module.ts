@@ -21,6 +21,13 @@ import { PortfolioProjectsComponent } from './section-display/portfolio/portfoli
 
 
 import { PortfolioCategoriesService } from './section-display/portfolio/portfolio-categories/portfolio-categories.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,9 +48,12 @@ import { PortfolioCategoriesService } from './section-display/portfolio/portfoli
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes,
-    { enableTracing: true, relativeLinkResolution: 'legacy' })
+    { enableTracing: true, relativeLinkResolution: 'legacy' }),
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatCarouselModule.forRoot()
   ],
   providers: [PortfolioCategoriesService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent]   
 })
 export class AppModule { }
