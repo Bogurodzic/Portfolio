@@ -4,7 +4,7 @@ export const projects: IProject[] = [
     {
         projectName: "Clik4Dom",
         projectType: "Mobile Application",
-        projectImages: ["assets/img/portfolio/gallery/clik4dom-1.png"],
+        projectImages: ["assets/img/portfolio/gallery/clik4dom-1.png", "assets/img/portfolio/gallery/clik4dom-2.png"],
         categories: ["category-all", "category-mobile"],
         client: "Cravtt Property",
         siteUrl: "https://apps.apple.com/us/app/clik4dom/id1512735374?ign-mpt=uo%3D2",
@@ -28,14 +28,14 @@ export const projects: IProject[] = [
     {
         projectName: "Smart Agent - Reservis",
         projectType: "Mobile Application",
-        projectImages: ["assets/img/portfolio/gallery/zwyczajny-1.png"],
+        projectImages: ["assets/img/portfolio/gallery/smart-agent-1.png"], 
         categories: ["category-all", "category-mobile"],
         client: "Reservis",
         siteUrl: "https://play.google.com/store/apps/details?id=com.reservis&hl=pl",
         date: "2010.03.01",
         projectDescription: "Smart Agent is a mobile app for owners of the businesses based on the provision of services and who have an account in Reservis system. The app enables accepting reservations added through the Internet, via phone and personally, and setting employees' time. The app is very handy and enables 24/7 access to Calendar. I was responsible for front-end side of Reservis system, and ensuring communication with Web-Service.",
         technologies: ["Ionic", "Typescript", "HTML5", "CSS3", "Javascript", "Apache Cordova", "xCode", "Android Studio", "Firebase", "Websocket"],
-        cover: "assets/img/portfolio/cover/zwyczajny-cover.png"
+        cover: "assets/img/portfolio/cover/smart-agent-cover.png"
     },
     {
         projectName: "Terminal",
