@@ -18,16 +18,10 @@
     margin-bottom: 30px;
   
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
   
     color: lighten(black, 60%);
-  
-    @include small {
-      font-size: 10px;
-      padding: 2.5px 5px;
-      margin-bottom: 15px;
-    };
   
     &:hover {
       cursor: pointer;
