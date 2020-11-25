@@ -52,14 +52,14 @@ export const projects: IProject[] = [
     {
         projectName: "Recepcja",
         projectType: "Javascript Application",
-        projectImages: ["/assets/img/portfolio/gallery/ryzowa-1.png", "/assets/img/portfolio/gallery/ryzowa-2.png", "/assets/img/portfolio/gallery/ryzowa-3.png", "/assets/img/portfolio/gallery/ryzowa-4.png"],  
+        projectImages: ["/assets/img/portfolio/gallery/recepcja-1.png", "/assets/img/portfolio/gallery/recepcja-2.png", "/assets/img/portfolio/gallery/recepcja-3.png", "/assets/img/portfolio/gallery/recepcja-4.png", "/assets/img/portfolio/gallery/recepcja-5.png", "/assets/img/portfolio/gallery/recepcja-6.png", "/assets/img/portfolio/gallery/recepcja-7.png", "/assets/img/portfolio/gallery/recepcja-8.png"],  
         categories: ["category-all", "category-site"],
         client: "Reservis",
         siteUrl: "http://ryzowapark.pl",
         date: "2018.12.15",
         projectDescription: "Recepcja enables clients to make reservation online in choosen place. In that project I was responsible for building the front-end layer of the service, and enabling communication with back-end with REST api.",
         technologies: ["HTML5", "CSS3", "Javascript", "ES6", "jQuery", "Wordpress", "MySQL", "ImageMapster"],
-        cover: "assets/img/portfolio/cover/ryzowa-cover.png"
+        cover: "assets/img/portfolio/cover/recepcja-cover.png"
     },
     {
         projectName: "Ryzowa Park",
