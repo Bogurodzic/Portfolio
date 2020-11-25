@@ -9,6 +9,9 @@ import { education } from '../../shared/data/resume-education.data';
   styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent implements OnInit {
+  public headline: string = "Resume";
+  public subHeadline: string = "4 years of experience";
+
   public educationHistory: ResumeEducation[]
 
   constructor() { }
