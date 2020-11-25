@@ -40,14 +40,14 @@ export const projects: IProject[] = [
     {
         projectName: "Terminal",
         projectType: "Javascript Application",
-        projectImages: ["/assets/img/portfolio/gallery/ryzowa-1.png", "/assets/img/portfolio/gallery/ryzowa-2.png", "/assets/img/portfolio/gallery/ryzowa-3.png", "/assets/img/portfolio/gallery/ryzowa-4.png"],  
+        projectImages: ["/assets/img/portfolio/gallery/terminal-1.png", "/assets/img/portfolio/gallery/terminal-2.png", "/assets/img/portfolio/gallery/terminal-3.png"],  
         categories: ["category-all", "category-site"],
         client: "Reservis",
         siteUrl: "http://ryzowapark.pl",
         date: "2018.12.15",
         projectDescription: "Terminal is a system, which enables making a reservation online for business owners, and management of it. In that project I was responsible for building the front-end layer of the service, and enabling communication with back-end with REST api.",
         technologies: ["HTML5", "CSS3", "Javascript", "ES6", "jQuery", "Wordpress", "MySQL", "ImageMapster"],
-        cover: "assets/img/portfolio/cover/ryzowa-cover.png"
+        cover: "assets/img/portfolio/cover/terminal-cover.png"
     },
     {
         projectName: "Recepcja",
@@ -83,7 +83,7 @@ export const projects: IProject[] = [
         client: "Personal project",
         siteUrl: "http://kamil.webheroes.io/Projekty/Arcade/",
         date: "2016.10.11",
-        projectDescription: "It is simple arcade game for Udacity Nanodegree Project made in Canvas.",
+        projectDescription: "It is simple arcade game based on Frogger, it was made for Udacity Nanodegree Project made in Canvas.",
         technologies: ["HTML5", "CSS3", "Canvas", "Javascript"],
         cover: "assets/img/portfolio/cover/arcade-cover.png"
 
