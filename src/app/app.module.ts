@@ -21,6 +21,7 @@ import { PortfolioProjectsComponent } from './section-display/portfolio/portfoli
 
 
 import { PortfolioCategoriesService } from './section-display/portfolio/portfolio-categories/portfolio-categories.service';
+import { ResumeEducationComponent } from './section-display/resume/resume-education/resume-education.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -43,7 +44,8 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     ContactComponent,
     PortfolioCategoriesComponent,
     HeadlineComponent,
-    PortfolioProjectsComponent
+    PortfolioProjectsComponent,
+    ResumeEducationComponent
   ],
   imports: [
     BrowserModule,
