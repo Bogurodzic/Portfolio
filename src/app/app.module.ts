@@ -27,6 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { ResumeExperienceComponent } from './section-display/resume/resume-experience/resume-experience.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     PortfolioCategoriesComponent,
     HeadlineComponent,
     PortfolioProjectsComponent,
-    ResumeEducationComponent
+    ResumeEducationComponent,
+    ResumeExperienceComponent
   ],
   imports: [
     BrowserModule,

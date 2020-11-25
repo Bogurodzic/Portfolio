@@ -1,0 +1,12 @@
+<div class="history experience-history">
+      <div class="experience-item"  *ngFor="let experience of experienceHistory;">
+        <p class="experience-item__year">{{experience.getFullDate()}}</p>
+        <div class="experience-item-wrapper">
+          <p class="experience-item__headline">{{experience.field}}</p>
+          <p class="experience-item__short">~{{experience.place}}</p>
+          <p class="experience-item__description">
+            {{experience.description}}
+          </p>
+        </div>
+      </div>
+</div>
