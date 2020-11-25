@@ -28,7 +28,7 @@ export class PortfolioProjectsComponent implements OnInit, OnDestroy {
 
     setTimeout(() => {
       this.initializeGrid();
-    }, 250); 
+    }, 50); 
   }
 
   ngOnDestroy(): void {
