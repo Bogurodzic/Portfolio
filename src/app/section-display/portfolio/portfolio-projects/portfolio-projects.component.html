@@ -1,4 +1,5 @@
 <div class="grid row">   
+  <ngx-spinner></ngx-spinner>
   <ng-container  *ngFor="let project of projects; let i = index">
     <div class="item {{project.getClassName()}}" (click)="openProject(project)">
       <div class="item-content">

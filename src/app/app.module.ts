@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -28,7 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { ResumeExperienceComponent } from './section-display/resume/resume-experience/resume-experience.component';
-
+import { NgxSpinnerModule } from "ngx-spinner";
 
 @NgModule({
   declarations: [
@@ -55,9 +55,11 @@ import { ResumeExperienceComponent } from './section-display/resume/resume-exper
     { enableTracing: true, relativeLinkResolution: 'legacy' }),
     BrowserAnimationsModule,
     MatDialogModule,
-    MatCarouselModule.forRoot()
+    MatCarouselModule.forRoot(),
+    NgxSpinnerModule
   ],
   providers: [PortfolioCategoriesService],
-  bootstrap: [AppComponent]   
+  bootstrap: [AppComponent] ,
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]  
 })
 export class AppModule { }

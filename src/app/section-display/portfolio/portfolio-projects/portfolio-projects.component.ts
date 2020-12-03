@@ -2,12 +2,12 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Project } from '../../../shared/classes/project.class';
 import { projects } from '../../../shared/data/projects.data';
 import { PortfolioCategoriesService } from '../portfolio-categories/portfolio-categories.service';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
-
+import { MatDialog } from '@angular/material/dialog';
 import Muuri from 'muuri/muuri';
 import { Subscription } from 'rxjs/Subscription';
 import { ProjectCategory } from '../../../shared/classes/project-category.class';
 import { PortfolioDetailsComponent } from '../portfolio-details/portfolio-details.component';
+import { NgxSpinnerService } from "ngx-spinner";
 
 @Component({
   selector: 'app-portfolio-projects',
@@ -20,15 +20,20 @@ export class PortfolioProjectsComponent implements OnInit, OnDestroy {
 
   public projects: Project[] = [];
   
-  constructor(private portfolioCategoriesService: PortfolioCategoriesService, public dialog: MatDialog) { }
+  constructor(
+    private portfolioCategoriesService: PortfolioCategoriesService, 
+    private spinner: NgxSpinnerService,
+    public dialog: MatDialog) { }
 
   ngOnInit() {
+    this.spinner.show();
     this.loadProjects();
     this.initSubscriptions();
 
     setTimeout(() => {
       this.initializeGrid();
-    }, 250); 
+      this.spinner.hide();
+    }, 1000); 
   }
 
   ngOnDestroy(): void {
