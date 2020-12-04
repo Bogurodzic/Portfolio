@@ -29,6 +29,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { ResumeExperienceComponent } from './section-display/resume/resume-experience/resume-experience.component';
 import { NgxSpinnerModule } from "ngx-spinner";
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -56,7 +61,11 @@ import { NgxSpinnerModule } from "ngx-spinner";
     BrowserAnimationsModule,
     MatDialogModule,
     MatCarouselModule.forRoot(),
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [PortfolioCategoriesService],
   bootstrap: [AppComponent] ,

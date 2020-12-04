@@ -1,5 +1,6 @@
 @import "../../../assets/scss/variables";
 @import "../../../assets/scss/breakpoints";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 
 
@@ -16,27 +17,23 @@
   };
 }
 
-.headline {
-  text-align: center;
-  margin-bottom: 25px;
+.row {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+
+  @include large {
+    position: static;
+    top: unset;
+    transform: none;
+
+    margin-top: 50px;
+  }
+
 }
 
-.headline-intro {
-  color: rgb(238, 238, 238);
-  font-size: 60px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  margin-bottom: 0px;
-}
-
-.headline-skills {
-  background: $mainColor;
-  padding: 2px 5px;
-  margin-left: 100px;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  display: inline-block;
-}
 
 .contact-headline {
   border-left: 2px solid $mainColor;
@@ -64,4 +61,24 @@
 
 .contact-info-item__link {
   color: black;
+}
+
+
+.form {
+  
+  width: 300px;
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  @include large {
+    margin-top: 50px;
+  }
+
+}
+
+.submit-button {
+  background-color: $mainColor;
+  color: white;
 }
