@@ -9,16 +9,14 @@ import $ from 'jquery/dist/jquery';
 })
 export class MenuComponent implements OnInit {
 
-  @Output() onChosedSection = new EventEmitter<{section: string}>();
-
   constructor() { }
 
   ngOnInit() {
   }
 
-
-  chosedSection(section){
-    this.onChosedSection.emit({"section": section});
+  hideMenuOnMobile(){
+    document.getElementById("menu").classList.add("hideMenu")
+    document.getElementById("menu").classList.remove("showMenu")
   }
 
 }
