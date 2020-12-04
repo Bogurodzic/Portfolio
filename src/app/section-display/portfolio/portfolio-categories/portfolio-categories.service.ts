@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 import { ProjectCategory } from '../../../shared/classes/project-category.class';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class PortfolioCategoriesService {
   private activeCategory: Subject<ProjectCategory> = new Subject<ProjectCategory>();
 
