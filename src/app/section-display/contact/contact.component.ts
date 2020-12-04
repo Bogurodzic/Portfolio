@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+  public headline: string = 'Contact';
+  public subHeadline: string = 'Get in Touch';
 
   constructor() { }
 

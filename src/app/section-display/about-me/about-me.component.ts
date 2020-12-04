@@ -6,7 +6,11 @@ import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent implements OnInit, AfterViewInit {
+  public headline: string = 'About Me';
+  public subHeadline: string = 'young, ambitious, ready for new challenges';
+
   public backgroundHeight: number;
+
 
   constructor() { }
 
