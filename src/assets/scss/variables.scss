@@ -8,7 +8,7 @@ $mainColor: rgb(46, 202, 127);
 
   ::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color: rgba(46, 202, 127, .5);
+    background-color: rgba($mainColor, .5);
     -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
   }
 }
