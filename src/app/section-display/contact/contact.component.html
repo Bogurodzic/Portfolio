@@ -1,6 +1,8 @@
 <div class="contact-wrapper">
   <app-headline [headline]="headline" [subHeadline]="subHeadline"></app-headline>
-
+  <ngx-spinner>
+    <p style="font-size: 20px; color: white">Sending message...</p>
+  </ngx-spinner>
   <div class="row">
     <div class="col-md-2"></div>
 
@@ -14,15 +16,15 @@
     </div>
 
     <div class="col-md-4 form">
-      <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" class="form">
+      <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" class="form" *ngIf="!messageSent">
         <mat-form-field   appearance="fill">
           <mat-label>Your Name</mat-label>
-          <input matInput formControlName="name">
+          <input matInput formControlName="name" required>
         </mat-form-field>
         <br>
         <mat-form-field  appearance="fill">
           <mat-label>Your email address</mat-label>
-          <input matInput formControlName="email">
+          <input matInput formControlName="email" type="email" required>
         </mat-form-field>
         <br>
         <mat-form-field  appearance="fill">
@@ -34,10 +36,14 @@
             #autosize="cdkTextareaAutosize"
             cdkAutosizeMinRows="4"
             cdkAutosizeMaxRows="10"
+            required
           ></textarea>
         </mat-form-field>
         <button mat-raised-button type="submit" class="submit-button">Send message</button>
       </form>
+      <p class="form-success" *ngIf="messageSent">
+        Message sent
+      </p>
     </div>
 
     <div class="col-md-2"></div>
