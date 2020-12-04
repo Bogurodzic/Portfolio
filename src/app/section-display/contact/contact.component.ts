@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CdkTextareaAutosize } from '@angular/cdk/text-field';
 import { Email } from '../../../assets/js/smtp';
 import { NgxSpinnerService } from "ngx-spinner";
@@ -13,7 +13,7 @@ export class ContactComponent implements OnInit {
   public headline: string = 'Contact';
   public subHeadline: string = 'Get in Touch';
 
-  public form;
+  public form: FormGroup;
   public messageSent: boolean = false;
 
 
@@ -27,31 +27,38 @@ export class ContactComponent implements OnInit {
   }
 
   public onSubmit(data) {
-    // Process checkout data here
-    console.log(data);
-    this.spinner.show();
 
-    Email.send({
-      SecureToken:'3d5e4b74-41e5-47c1-8110-38c65e97a1a4',
-      To : 'kontakt@kamiljarzab.pl',
-      From : data.email,
-      Subject : data.name,
-      Body : data.message,
-  }).then((message) => {
-      console.log('message', message);
-      this.spinner.hide();
-      this.messageSent = true;
+    if (this.form.valid) {
+      this.spinner.show();
+
+      Email.send({
+        SecureToken:'3d5e4b74-41e5-47c1-8110-38c65e97a1a4',
+        To : 'kontakt@kamiljarzab.pl',
+        From : data.email,
+        Subject : data.name,
+        Body : data.message + ' <- message sent via portfolio form.',
+      }).then((message) => {
+          this.emailSent(message);
+        }
+      );
     }
-  );
-
   }
 
   private buildForm(): void {
     this.form = this.formBuilder.group({
       name: '',
-      email: '',
+      email: ['', Validators.email],
       message: ''
     });
+  }
+
+  private emailSent(message): void {
+    if (message === 'OK') {
+      this.spinner.hide();
+      this.messageSent = true;
+    } else {
+      window.alert('error occured, try again later');
+    }
   }
 
 }

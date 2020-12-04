@@ -20,13 +20,14 @@
         <mat-form-field   appearance="fill">
           <mat-label>Your Name</mat-label>
           <input matInput formControlName="name" required>
+          <mat-error *ngIf="form.get('name').invalid">Name is required</mat-error>
         </mat-form-field>
-        <br>
         <mat-form-field  appearance="fill">
           <mat-label>Your email address</mat-label>
           <input matInput formControlName="email" type="email" required>
+            <mat-error *ngIf="!form.get('email').errors?.email && form.get('email').invalid">Email address is required</mat-error>
+            <mat-error *ngIf="form.get('email').errors?.email">Email address is invalid</mat-error>
         </mat-form-field>
-        <br>
         <mat-form-field  appearance="fill">
           <mat-label>Your message</mat-label>
           <textarea 
@@ -38,12 +39,17 @@
             cdkAutosizeMaxRows="10"
             required
           ></textarea>
+          <mat-error *ngIf="form.get('message').invalid">Message is required</mat-error>
         </mat-form-field>
         <button mat-raised-button type="submit" class="submit-button">Send message</button>
       </form>
-      <p class="form-success" *ngIf="messageSent">
-        Message sent
-      </p>
+      <div class="form-success" *ngIf="messageSent">
+        <p class="form-success__text" >
+          Message sent
+        </p>
+        <img class="form-success__image" src="https://media.giphy.com/media/xUPJPp6hLXcn4PbOBG/giphy.gif" alt="postman gif">  
+      </div>
+
     </div>
 
     <div class="col-md-2"></div>

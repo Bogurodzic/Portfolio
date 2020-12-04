@@ -70,6 +70,7 @@
 
   mat-form-field {
     width: 100%;
+    margin-bottom: 7.5px;
   }
 
   @include large {
@@ -83,8 +84,14 @@
   color: white;
 }
 
-.form-success {
+.form-success__text {
   font-family: 'Open Sans', sans-serif;
   font-size: 35px;
   color: $mainColor;
+}
+
+.form-success__image {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
 }
