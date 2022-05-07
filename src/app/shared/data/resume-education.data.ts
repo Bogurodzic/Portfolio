@@ -10,10 +10,10 @@ export const education: IResumeEducation[] = [
     },
     {
         dateStart: 'Nov 2020',
-        dateEnd: 'Current',
+        dateEnd: 'Nov 2021',
         category: 'Game Development Course',
         place: 'GameDev School',
-        description: 'A 12-month course, intended for people who want to deal with the production of games professionally. A course led by many famous people in the industry. The course covers the most important topics in the field of game design and development. Teams of several people are created, including graphic designers, programmers, and future game designers. On the first day, project teams are given tasks to carry out, which are discussed during classes with lecturers. The end result is three fully completed projects.'
+        description: 'A 12-month course, intended for people who want to deal with the production of games professionally. A course led by many famous people in the industry. The course covers the most important topics in the field of game design and development. Teams of several people are created, including graphic designers, programmers, and future game designers. On the first day, project teams are given tasks to carry out, which are discussed during classes with lecturers. The end result is three fully completed projects which you can check in my portfolio.'
     },
     {
         dateStart: 'Jan 2016',
