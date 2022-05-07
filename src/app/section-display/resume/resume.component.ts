@@ -12,7 +12,7 @@ import { experience } from '../../shared/data/resume-experience.data';
 })
 export class ResumeComponent implements OnInit {
   public headline: string = "Resume";
-  public subHeadline: string = "4 years of experience";
+  public subHeadline: string = "6 years of experience";
 
   public educationHistory: ResumeEducation[]
   public experienceHistory: ResumeExperience[];
