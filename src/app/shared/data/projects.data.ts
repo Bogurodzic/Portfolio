@@ -1,6 +1,18 @@
 import { IProject } from "../interfaces/project.interface";
 
-export const projects: IProject[] = [
+export const projects: IProject[] = [    
+    {
+        projectName: "Terminal",
+        projectType: "Javascript Application",
+        projectImages: ["/assets/img/portfolio/gallery/terminal-1.gif", "/assets/img/portfolio/gallery/terminal-2.gif", "/assets/img/portfolio/gallery/terminal-3.png", "/assets/img/portfolio/gallery/terminal-4.png", "/assets/img/portfolio/gallery/terminal-5.png", "/assets/img/portfolio/gallery/terminal-6.png"],  
+        categories: ["category-all", "category-site"],
+        client: "Reservis",
+        siteUrl: "https://oferta.reservis.pl/",
+        date: "2018.12.15",
+        projectDescription: "Terminal is a system, which enables making a reservation online for business owners, and management of it. In that project I was responsible for building the front-end layer of the service, and enabling communication with back-end with REST api.",
+        technologies: ["HTML5", "CSS3", "Javascript", "ES6", "jQuery", "Wordpress", "MySQL", "ImageMapster"],
+        cover: "assets/img/portfolio/cover/terminal-cover.png"
+    },
     {
         projectName: "Clik4Dom",
         projectType: "Mobile Application",
@@ -36,18 +48,6 @@ export const projects: IProject[] = [
         projectDescription: "Smart Agent is a mobile app for owners of the businesses based on the provision of services and who have an account in Reservis system. The app enables accepting reservations added through the Internet, via phone and personally, and setting employees' time. The app is very handy and enables 24/7 access to Calendar. I was responsible for front-end side of Reservis system, and ensuring communication with Web-Service.",
         technologies: ["Ionic", "Typescript", "HTML5", "CSS3", "Javascript", "Apache Cordova", "xCode", "Android Studio", "Firebase", "Websocket"],
         cover: "assets/img/portfolio/cover/smart-agent-cover-min.png"
-    },
-    {
-        projectName: "Terminal",
-        projectType: "Javascript Application",
-        projectImages: ["/assets/img/portfolio/gallery/terminal-1-min.png", "/assets/img/portfolio/gallery/terminal-2-min.png", "/assets/img/portfolio/gallery/terminal-3-min.png"],  
-        categories: ["category-all", "category-site"],
-        client: "Reservis",
-        siteUrl: "https://oferta.reservis.pl/",
-        date: "2018.12.15",
-        projectDescription: "Terminal is a system, which enables making a reservation online for business owners, and management of it. In that project I was responsible for building the front-end layer of the service, and enabling communication with back-end with REST api.",
-        technologies: ["HTML5", "CSS3", "Javascript", "ES6", "jQuery", "Wordpress", "MySQL", "ImageMapster"],
-        cover: "assets/img/portfolio/cover/terminal-cover-min.png"
     },
     {
         projectName: "Recepcja",
