@@ -73,7 +73,7 @@ export class PortfolioProjectsComponent implements OnInit, OnDestroy {
     if (windowWidth > 1920) {
       dialogHeight = '60%';
     } else if (windowWidth > 1500) {
-      dialogHeight = '52%';
+      dialogHeight = '70%';
     } else {
       dialogHeight = '70%';
     }

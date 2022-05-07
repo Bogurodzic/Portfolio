@@ -26,13 +26,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { MatDialogModule } from '@angular/material/dialog';
-import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { ResumeExperienceComponent } from './section-display/resume/resume-experience/resume-experience.component';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+
+import { SwiperModule } from 'swiper/angular';
+
 
 
 @NgModule({
@@ -60,12 +62,12 @@ import { MatButtonModule } from '@angular/material/button';
     { enableTracing: true, relativeLinkResolution: 'legacy' }),
     BrowserAnimationsModule,
     MatDialogModule,
-    MatCarouselModule.forRoot(),
     NgxSpinnerModule,
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    SwiperModule
   ],
   providers: [PortfolioCategoriesService],
   bootstrap: [AppComponent] ,

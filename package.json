@@ -22,7 +22,7 @@
     "@angular/platform-browser": "^13.3.6",
     "@angular/platform-browser-dynamic": "^13.3.6",
     "@angular/router": "^13.3.6",
-    "@ngmodule/material-carousel": "^0.6.0",
+    "@ngbmodule/material-carousel": "^0.7.2",
     "@types/hammerjs": "^2.0.36",
     "angular2-carousel": "^1.0.17",
     "core-js": "^3.7.0",
@@ -33,6 +33,7 @@
     "rxjs": "^6.6.3",
     "rxjs-compat": "^6.0.0-rc.0",
     "slick-carousel": "^1.8.1",
+    "swiper": "^8.1.4",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
