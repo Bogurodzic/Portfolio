@@ -17,8 +17,8 @@ export const projectCategories: IProjectCategory[] = [
         active: false
     },
     {
-        categoryName: "Arcade",
-        categoryFilterClass: "category-arcade",
+        categoryName: "Games",
+        categoryFilterClass: "category-game",
         active: false
     }
 ]

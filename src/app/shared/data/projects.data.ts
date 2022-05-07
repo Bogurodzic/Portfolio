@@ -74,20 +74,46 @@ export const projects: IProject[] = [
         cover: "assets/img/portfolio/cover/ryzowa-cover-min.png"
     },
 
+    {
+        projectName: "Vempire - Adventure Game",
+        projectType: "GameDev",
+        projectImages: ["assets/img/portfolio/gallery/vempire-1.png", "assets/img/portfolio/gallery/vempire-2.png", "assets/img/portfolio/gallery/vempire-3.png", "assets/img/portfolio/gallery/vempire-4.png", "assets/img/portfolio/gallery/vempire-5.png", "assets/img/portfolio/gallery/vempire-6.png"],
+        categories: ["category-all", "category-game"],
+        client: "Study project",
+        siteUrl: "https://www.youtube.com/watch?v=hARpqzWI_fc",
+        date: "2021.10.14",
+        projectDescription: "I was responsible for programming part. Vempire is adventure 2d game.",
+        technologies: ["Unity", "C#"],
+        cover: "assets/img/portfolio/cover/vempire-cover.png"
+    },
 
     {
-        projectName: "Arcade Game",
-        projectType: "Javascript",
-        projectImages: ["assets/img/portfolio/gallery/arcade-1-min.png"],
-        categories: ["category-all", "category-arcade", "category-site"],
-        client: "Personal project",
-        siteUrl: "http://kamil.webheroes.io/Projekty/Arcade/",
-        date: "2016.10.11",
-        projectDescription: "It is simple arcade game based on Frogger, it was made for Udacity Nanodegree Project made in Canvas.",
-        technologies: ["HTML5", "CSS3", "Canvas", "Javascript"],
-        cover: "assets/img/portfolio/cover/arcade-cover-min.png"
-
+        projectName: "Hero Battle - Tactical Turn-based game",
+        projectType: "GameDev",
+        projectImages: ["assets/img/portfolio/gallery/hero-battle-1.png", "assets/img/portfolio/gallery/hero-battle-2.png", "assets/img/portfolio/gallery/hero-battle-3.png", "assets/img/portfolio/gallery/hero-battle-4.png", "assets/img/portfolio/gallery/hero-battle-5.png"],
+        categories: ["category-all", "category-game"],
+        client: "Study project",
+        siteUrl: "https://www.youtube.com/watch?v=w0-OPYtRocU",
+        date: "2021.04.08",
+        projectDescription: "I was responsible for programming part. Hero Battle is a tactical turn-based game for two players who play against each other using squads of units with different characteristics.",
+        technologies: ["Unity", "C#"],
+        cover: "assets/img/portfolio/cover/hero-battle-cover.png"
     },
+
+    {
+        projectName: "Moon Patrol remake",
+        projectType: "GameDev",
+        projectImages: ["assets/img/portfolio/gallery/moon-patrol-1.png", "assets/img/portfolio/gallery/moon-patrol-2.png", "assets/img/portfolio/gallery/moon-patrol-3.png", "assets/img/portfolio/gallery/moon-patrol-4.png"],
+        categories: ["category-all", "category-game"],
+        client: "Study project",
+        siteUrl: "https://www.youtube.com/watch?v=1KTwnmamnaY",
+        date: "2021.01.29",
+        projectDescription: "I was responsible for programming part. Our goal was to recreate the original Moon Patrol with a modern twist. The key assumption? Keep as much of the original as possible in mechanics, but  change the artistic setting.",
+        technologies: ["Unity", "C#"],
+        cover: "assets/img/portfolio/cover/moon-patrol-cover.png"
+    },
+
+
   ];
 
 
