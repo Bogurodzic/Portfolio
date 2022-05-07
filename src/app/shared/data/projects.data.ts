@@ -100,6 +100,20 @@ export const projects: IProject[] = [
         cover: "assets/img/portfolio/cover/hero-battle-cover.png"
     },
 
+
+    {
+        projectName: "H.M.S. Rustbucket",
+        projectType: "GameDev",
+        projectImages: ["assets/img/portfolio/gallery/hms-1.png", "assets/img/portfolio/gallery/hms-2.png", "assets/img/portfolio/gallery/hms-3.png", "assets/img/portfolio/gallery/hms-4.png"],
+        categories: ["category-all", "category-game"],
+        client: "GameJam project",
+        siteUrl: "https://ldjam.com/events/ludum-dare/48/h-m-s-rustbucket",
+        date: "2021.04.08",
+        projectDescription: "I was responsible for programming part. H.M.S. Rustbucket - Two brave sailors try to survive as long as possible on a ship that is slowly falling apart, while trying not to disappoint The Queen and to remember about Tea Time.",
+        technologies: ["Unity", "C#"],
+        cover: "assets/img/portfolio/cover/hms-cover.png"
+    },
+
     {
         projectName: "Moon Patrol remake",
         projectType: "GameDev",
