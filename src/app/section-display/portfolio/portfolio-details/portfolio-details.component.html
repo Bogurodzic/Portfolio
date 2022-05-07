@@ -9,22 +9,22 @@
 
     <div class="row">
       <div class="col-md-9">
-        <mat-carousel
-          timings="200ms ease-in"
-          [autoplay]="true"
-          interval="3000"
-          [proportion]="40"
-          color="white"
+        <swiper
+          [config]="config"
+          (swiper)="onSwiper($event)"
+          (slideChange)="onSlideChange()"
         >
-          <mat-carousel-slide
-            *ngFor="let slide of slides; let i = index"
-            [image]="slide.image"
-            overlayColor="#ffffff"
-            [hideOverlay]="true"
-          ></mat-carousel-slide>
-        </mat-carousel>
-        
-        <!-- <img class="item-content__img" src="{{project.projectImages[0]}}" alt=""> -->
+        <ng-container *ngFor="let slide of slides; let i = index">
+          <ng-template swiperSlide>
+            <div class="slider-wrapper">
+              <div class="slider-inner">
+                <img src="{{slide.image}}" alt="">
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+
+      </swiper>
       </div>
       <div class="col-md-3">
         <div class="description">

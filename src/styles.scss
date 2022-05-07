@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+@import './assets/scss/variables.scss';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -8,4 +12,18 @@ mat-dialog-container {
     background: url("/assets/img/background3.png") !important;
     background-repeat: repeat !important;
 }
-  
+
+
+/* SWIPER SCSS */
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: $mainColor;
+}
+
+.swiper-wrapper {
+    min-height: 45vh;
+  }
