@@ -14,6 +14,18 @@ export const projects: IProject[] = [
         cover: "assets/img/portfolio/cover/terminal-cover.png"
     },
     {
+        projectName: "Recepcja",
+        projectType: "Javascript Application",
+        projectImages: ["/assets/img/portfolio/gallery/recepcja-1.png", "/assets/img/portfolio/gallery/recepcja-2.png"],  
+        categories: ["category-all", "category-site"],
+        client: "Reservis",
+        siteUrl: "https://oferta.reservis.pl/",
+        date: "2018.12.15",
+        projectDescription: "Recepcja enables clients to make reservation online in choosen place. In that project I was responsible for building the front-end layer of the service, and enabling communication with back-end with REST api.",
+        technologies: ["HTML5", "CSS3", "Javascript", "ES6", "jQuery", "Wordpress", "MySQL", "ImageMapster"],
+        cover: "assets/img/portfolio/cover/recepcja-cover.png"
+    },
+    {
         projectName: "Clik4Dom",
         projectType: "Mobile Application",
         projectImages: ["assets/img/portfolio/gallery/clik4dom-1-min.png", "assets/img/portfolio/gallery/clik4dom-2-min.png"],
@@ -48,18 +60,6 @@ export const projects: IProject[] = [
         projectDescription: "Smart Agent is a mobile app for owners of the businesses based on the provision of services and who have an account in Reservis system. The app enables accepting reservations added through the Internet, via phone and personally, and setting employees' time. The app is very handy and enables 24/7 access to Calendar. I was responsible for front-end side of Reservis system, and ensuring communication with Web-Service.",
         technologies: ["Ionic", "Typescript", "HTML5", "CSS3", "Javascript", "Apache Cordova", "xCode", "Android Studio", "Firebase", "Websocket"],
         cover: "assets/img/portfolio/cover/smart-agent-cover-min.png"
-    },
-    {
-        projectName: "Recepcja",
-        projectType: "Javascript Application",
-        projectImages: ["/assets/img/portfolio/gallery/recepcja-1-min.png", "/assets/img/portfolio/gallery/recepcja-2-min.png", "/assets/img/portfolio/gallery/recepcja-3-min.png", "/assets/img/portfolio/gallery/recepcja-4-min.png", "/assets/img/portfolio/gallery/recepcja-5-min.png", "/assets/img/portfolio/gallery/recepcja-6-min.png", "/assets/img/portfolio/gallery/recepcja-7-min.png", "/assets/img/portfolio/gallery/recepcja-8-min.png"],  
-        categories: ["category-all", "category-site"],
-        client: "Reservis",
-        siteUrl: "https://oferta.reservis.pl/",
-        date: "2018.12.15",
-        projectDescription: "Recepcja enables clients to make reservation online in choosen place. In that project I was responsible for building the front-end layer of the service, and enabling communication with back-end with REST api.",
-        technologies: ["HTML5", "CSS3", "Javascript", "ES6", "jQuery", "Wordpress", "MySQL", "ImageMapster"],
-        cover: "assets/img/portfolio/cover/recepcja-cover-min.png"
     },
     {
         projectName: "Ryzowa Park",
