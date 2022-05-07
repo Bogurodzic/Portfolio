@@ -50,18 +50,6 @@ export const projects: IProject[] = [
         cover: "assets/img/portfolio/cover/zwyczajny-cover-min.png"
     },
     {
-        projectName: "Smart Agent - Reservis",
-        projectType: "Mobile Application",
-        projectImages: ["assets/img/portfolio/gallery/smart-agent-1-min.png"], 
-        categories: ["category-all", "category-mobile"],
-        client: "Reservis",
-        siteUrl: "https://play.google.com/store/apps/details?id=com.reservis&hl=pl",
-        date: "2010.03.01",
-        projectDescription: "Smart Agent is a mobile app for owners of the businesses based on the provision of services and who have an account in Reservis system. The app enables accepting reservations added through the Internet, via phone and personally, and setting employees' time. The app is very handy and enables 24/7 access to Calendar. I was responsible for front-end side of Reservis system, and ensuring communication with Web-Service.",
-        technologies: ["Ionic", "Typescript", "HTML5", "CSS3", "Javascript", "Apache Cordova", "xCode", "Android Studio", "Firebase", "Websocket"],
-        cover: "assets/img/portfolio/cover/smart-agent-cover-min.png"
-    },
-    {
         projectName: "Ryzowa Park",
         projectType: "Javascript Application",
         projectImages: ["/assets/img/portfolio/gallery/ryzowa-1-min.png", "/assets/img/portfolio/gallery/ryzowa-2-min.png", "/assets/img/portfolio/gallery/ryzowa-3-min.png", "/assets/img/portfolio/gallery/ryzowa-4-min.png"],  
@@ -73,7 +61,18 @@ export const projects: IProject[] = [
         technologies: ["HTML5", "CSS3", "Javascript", "ES6", "jQuery", "Wordpress", "MySQL", "ImageMapster"],
         cover: "assets/img/portfolio/cover/ryzowa-cover-min.png"
     },
-
+    {
+        projectName: "Smart Agent - Reservis",
+        projectType: "Mobile Application",
+        projectImages: ["assets/img/portfolio/gallery/smart-agent-1-min.png"], 
+        categories: ["category-all", "category-mobile"],
+        client: "Reservis",
+        siteUrl: "https://play.google.com/store/apps/details?id=com.reservis&hl=pl",
+        date: "2010.03.01",
+        projectDescription: "Smart Agent is a mobile app for owners of the businesses based on the provision of services and who have an account in Reservis system. The app enables accepting reservations added through the Internet, via phone and personally, and setting employees' time. The app is very handy and enables 24/7 access to Calendar. I was responsible for front-end side of Reservis system, and ensuring communication with Web-Service.",
+        technologies: ["Ionic", "Typescript", "HTML5", "CSS3", "Javascript", "Apache Cordova", "xCode", "Android Studio", "Firebase", "Websocket"],
+        cover: "assets/img/portfolio/cover/smart-agent-cover-min.png"
+    },
     {
         projectName: "Vempire - Adventure Game",
         projectType: "GameDev",
