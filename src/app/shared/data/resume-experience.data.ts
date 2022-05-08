@@ -6,7 +6,7 @@ export const experience: IResumeExperience[] = [
         dateEnd: 'Current',
         field: 'Font-end Developer',
         place: 'Boombit',
-        description: 'Working with angular part in inside apps which optimalize internal processes and menagment.'
+        description: 'Working with angular part in inside apps which optimize internal processes and management.'
     },
     {
         dateStart: 'Aug 2018',
