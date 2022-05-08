@@ -9,7 +9,7 @@ import { Project } from "../../shared/classes/project.class";
 })
 export class PortfolioComponent implements OnInit {
   public headline: string = "Portfolio";
-  public subHeadline: string = "My Work";
+  public subHeadline: string = "my work";
 
   constructor() { }
 

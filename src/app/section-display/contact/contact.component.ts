@@ -11,7 +11,7 @@ import { NgxSpinnerService } from "ngx-spinner";
 })
 export class ContactComponent implements OnInit {
   public headline: string = 'Contact';
-  public subHeadline: string = 'Get in Touch';
+  public subHeadline: string = 'get in touch';
 
   public form: FormGroup;
   public messageSent: boolean = false;

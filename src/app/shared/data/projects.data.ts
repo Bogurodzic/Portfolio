@@ -74,14 +74,14 @@ export const projects: IProject[] = [
         cover: "assets/img/portfolio/cover/smart-agent-cover-min.png"
     },
     {
-        projectName: "Vempire - Adventure Game",
+        projectName: "vEmpire - Adventure Game",
         projectType: "GameDev",
         projectImages: ["assets/img/portfolio/gallery/vempire-1.png", "assets/img/portfolio/gallery/vempire-2.png", "assets/img/portfolio/gallery/vempire-3.png", "assets/img/portfolio/gallery/vempire-4.png", "assets/img/portfolio/gallery/vempire-5.png", "assets/img/portfolio/gallery/vempire-6.png"],
         categories: ["category-all", "category-game"],
         client: "Study project",
         siteUrl: "https://www.youtube.com/watch?v=hARpqzWI_fc",
         date: "2021.10.14",
-        projectDescription: "I was responsible for programming part. Vempire is adventure 2d game.",
+        projectDescription: "vEmpire - vEmpire is an adventure 2D game, made in Unity. It was the final project for Gamedev School. In this project, I was responsible for programming part.",
         technologies: ["Unity", "C#"],
         cover: "assets/img/portfolio/cover/vempire-cover.png"
     },
@@ -94,7 +94,7 @@ export const projects: IProject[] = [
         client: "Study project",
         siteUrl: "https://www.youtube.com/watch?v=w0-OPYtRocU",
         date: "2021.04.08",
-        projectDescription: "I was responsible for programming part. Hero Battle is a tactical turn-based game for two players who play against each other using squads of units with different characteristics.",
+        projectDescription: "Hero Battle - a tactical turn-based game for two people, who play against each other using squads of units with different characteristics. In this project, I was responsible for programming part.",
         technologies: ["Unity", "C#"],
         cover: "assets/img/portfolio/cover/hero-battle-cover.png"
     },
@@ -108,7 +108,7 @@ export const projects: IProject[] = [
         client: "GameJam project",
         siteUrl: "https://ldjam.com/events/ludum-dare/48/h-m-s-rustbucket",
         date: "2021.04.08",
-        projectDescription: "I was responsible for programming part. H.M.S. Rustbucket - Two brave sailors try to survive as long as possible on a ship that is slowly falling apart, while trying not to disappoint The Queen and to remember about Tea Time.",
+        projectDescription: "H.M.S. Rustbucket - Two brave sailors try to survive as long as possible on a ship that is slowly falling apart, while trying not to disappoint The Queen and to remember about Tea Time. In this project, I was responsible for programming part.",
         technologies: ["Unity", "C#"],
         cover: "assets/img/portfolio/cover/hms-cover.png"
     },
@@ -121,7 +121,7 @@ export const projects: IProject[] = [
         client: "Study project",
         siteUrl: "https://www.youtube.com/watch?v=1KTwnmamnaY",
         date: "2021.01.29",
-        projectDescription: "I was responsible for programming part. Our goal was to recreate the original Moon Patrol with a modern twist. The key assumption? Keep as much of the original as possible in mechanics, but  change the artistic setting.",
+        projectDescription: "Moon Patrol - Our goal was to recreate the original Moon Patrol with a modern twist. The key assumption? Keep as much of the original as possible in mechanics, but change the artistic setting. In this projects, I was responsible for programming part.",
         technologies: ["Unity", "C#"],
         cover: "assets/img/portfolio/cover/moon-patrol-cover.png"
     },
