@@ -11,7 +11,13 @@
   padding: 20px 60px;
 
   @include large {
-    padding: 30px 30px;
+    padding: 0px;
+  };
+}
+
+.image-column {
+  @include large {
+    padding: 0px;
   };
 }
 

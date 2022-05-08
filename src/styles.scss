@@ -4,6 +4,7 @@
 @import 'swiper/scss/navigation';
 @import 'swiper/scss/pagination';
 @import './assets/scss/variables.scss';
+@import './assets/scss/breakpoints.scss';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -24,6 +25,22 @@ mat-dialog-container {
     color: $mainColor;
 }
 
+.swiper-button-next {
+    @include large {
+        transform: scale(0.75) translateX(17.5px);
+    };
+}
+
+.swiper-button-prev {
+    @include large {
+        transform: scale(0.75) translateX(-17.5px);
+    };
+}
+
 .swiper-wrapper {
     min-height: 45vh;
-  }
+  
+    @include large {
+        min-height: 30vh;
+    };
+}

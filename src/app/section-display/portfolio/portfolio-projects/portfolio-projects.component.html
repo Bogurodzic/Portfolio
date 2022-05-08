@@ -2,18 +2,18 @@
   <ngx-spinner>
     <p style="font-size: 20px; color: white">Loading...</p>
   </ngx-spinner>
-  <ng-container  *ngFor="let project of projects; let i = index">
-    <div class="item {{project.getClassName()}}" (click)="openProject(project)">
-      <div class="item-content">
-        <img class="item-content__img" src="{{project.cover}}" alt="">
-        <div class="item-content-overlay">
-          <h5 class="item-content-overlay__name">{{project.projectName}}</h5>
-          <div class="item-content-overlay-menu">
-            <p class="item-content-overlay-menu__name">{{project.projectType}}</p>
-            <i class="devicon-javascript-plain item-content-overlay-menu__icon"></i>
+    <ng-container *ngFor="let project of projects; let i = index">
+      <div class="item {{project.getClassName()}}" (click)="openProject(project)">
+        <div class="item-content">
+          <img class="item-content__img" src="{{project.cover}}" alt="">
+          <div class="item-content-overlay">
+            <h5 class="item-content-overlay__name">{{project.projectName}}</h5>
+            <div class="item-content-overlay-menu">
+              <p class="item-content-overlay-menu__name">{{project.projectType}}</p>
+              <i class="devicon-javascript-plain item-content-overlay-menu__icon"></i>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </ng-container>
+    </ng-container>
 </div>
